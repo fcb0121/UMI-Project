@@ -1,0 +1,22 @@
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+IMU.InsertKFsWhenLost optional parameter does not exist...
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+
+[RASPI_CRASH] Caught signal 11
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(_Z21PrintBacktraceAndExiti+0x3d)[0x5711aa43281d]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7ea639f43520]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN3g2o10BaseVertexILi6ENS_7SE3QuatEE4pushEv+0x37)[0x7ea63b09cb47]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/Thirdparty/g2o/lib/libg2o.so(_ZN3g2o15SparseOptimizer4pushERSt6vectorIPNS_16OptimizableGraph6VertexESaIS4_EE+0x30)[0x7ea639eca860]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/Thirdparty/g2o/lib/libg2o.so(_ZN3g2o30OptimizationAlgorithmLevenberg5solveEib+0xb8)[0x7ea639ed3588]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/Thirdparty/g2o/lib/libg2o.so(_ZN3g2o15SparseOptimizer8optimizeEib+0xf7)[0x7ea639ecb057]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM39Optimizer16PoseOptimizationEPNS_5FrameE+0xf36)[0x7ea63b02e596]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM38Tracking22TrackReferenceKeyFrameEv+0xc7)[0x7ea63af9d307]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM38Tracking5TrackEv+0x1915)[0x7ea63afad2d5]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM38Tracking18GrabImageMonocularERKN2cv3MatERKdNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x216)[0x7ea63afaec46]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM36System14TrackMonocularERKN2cv3MatERKdRKSt6vectorINS_3IMU5PointESaIS9_EENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x226)[0x7ea63af4d606]
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(main+0x191c)[0x5711aa431ffc]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7ea639f2ad90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7ea639f2ae40]
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(_start+0x25)[0x5711aa432715]

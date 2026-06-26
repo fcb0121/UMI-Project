@@ -1,0 +1,1537 @@
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular-Inertial
+Loading settings from /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_imx219_mono_inertial_noisy_820x616.yaml
+	-Loaded camera 1
+	-Loaded image info
+	-Loaded IMU calibration
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Kannala-Brandt): [ 203.583 203.286 415.452 309.098 -0.0119256 -0.00395131 0.000405187 -0.000302394 ]
+	-Original image size: [ 820 , 616 ]
+	-Current image size: [ 820 , 616 ]
+	-Sequence FPS: 30
+	-Gyro noise: 0.035
+	-Accelerometer noise: 0.2
+	-Gyro walk: 0.002
+	-Accelerometer walk: 0.02
+	-IMU frequency: 247
+	-Features per image: 1500
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 15
+	-Min FAST threshold: 5
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+There are 1 cameras in the atlas
+Camera 0 is fisheye
+Discard points further than 20 m from current camera
+Video opened using backend FFMPEG
+There are 3721 frames in total
+video FPS 30
+IMU samples 30653
+Frame timestamps 3721 first_abs=1.78063e+09 first_rel=0 last_rel=123.977
+IMU first_rel=0.0656202 last_rel=124.151
+line 1873 keyframes 0MapPoints0
+frame=0 t=0 imu_batch=0 tracking_state=1 lost_run=0
+init_success=0
+ tag_init_success=0
+Empty IMU measurements vector!!!
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:0; Map init KF:0
+New Map created with 479 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=0 frame=0 ts=0
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=6942
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=10 kfs=2 matches=49
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=10 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=11 kfs=2 matches=58
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=11 kfs=2
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=1 frame=9 ts=0.2999570369720459
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=6780
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=12 kfs=2 matches=227
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=12 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=13 kfs=2 matches=258
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=0.2999570369720459 kfs=2
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=13 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=14 kfs=2 matches=277
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=14 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=15 kfs=2 matches=288
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=15 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=16 kfs=2 matches=272
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=16 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=17 kfs=2 matches=254
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=17 kfs=2
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=2 frame=17 ts=0.56658411026000977
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=0.56658411026000977 kfs=3
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=18 kfs=3 matches=234
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=18 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=19 kfs=3 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=19 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=20 kfs=3 matches=223
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=20 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=21 kfs=3 matches=227
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=21 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=22 kfs=3 matches=232
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=22 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=23 kfs=3 matches=234
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=23 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=24 kfs=3 matches=237
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=24 kfs=3
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=25 kfs=3 matches=235
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=25 kfs=3
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=3 frame=25 ts=0.83318305015563965
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=26 kfs=4 matches=249
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=0.83318305015563965 kfs=4
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=26 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=27 kfs=4 matches=242
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=27 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=28 kfs=4 matches=250
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=28 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=29 kfs=4 matches=246
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=29 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=30 kfs=4 matches=251
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=30 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=31 kfs=4 matches=248
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=31 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=32 kfs=4 matches=252
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=32 kfs=4
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=33 kfs=4 matches=248
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=33 kfs=4
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=4 frame=33 ts=1.0998640060424805
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=1.0998640060424805 kfs=5
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=34 kfs=5 matches=228
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=34 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=35 kfs=5 matches=242
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=35 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=36 kfs=5 matches=260
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=36 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=37 kfs=5 matches=238
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=37 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=38 kfs=5 matches=247
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=38 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=39 kfs=5 matches=240
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=39 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=40 kfs=5 matches=246
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=40 kfs=5
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=41 kfs=5 matches=246
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=41 kfs=5
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=5 frame=41 ts=1.3664228916168213
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1500
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=1.3664228916168213 kfs=6
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=42 kfs=6 matches=259
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=42 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=43 kfs=6 matches=252
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=43 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=44 kfs=6 matches=260
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=44 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=45 kfs=6 matches=251
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=45 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=46 kfs=6 matches=257
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=46 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=47 kfs=6 matches=243
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=47 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=48 kfs=6 matches=252
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=48 kfs=6
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=49 kfs=6 matches=246
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=49 kfs=6
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=6 frame=49 ts=1.6330380439758301
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=50 kfs=7 matches=250
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=1.6330380439758301 kfs=7
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=50 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=51 kfs=7 matches=258
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=51 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=52 kfs=7 matches=269
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=52 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=53 kfs=7 matches=257
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=53 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=54 kfs=7 matches=258
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=54 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=55 kfs=7 matches=242
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=55 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=56 kfs=7 matches=252
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=56 kfs=7
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=57 kfs=7 matches=263
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=57 kfs=7
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=7 frame=57 ts=1.8996689319610596
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=58 kfs=8 matches=261
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=1.8996689319610596 kfs=8
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=58 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=59 kfs=8 matches=255
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=59 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=60 kfs=8 matches=260
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=60 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=61 kfs=8 matches=254
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=61 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=62 kfs=8 matches=260
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=62 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=63 kfs=8 matches=258
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=63 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=64 kfs=8 matches=255
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=64 kfs=8
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=65 kfs=8 matches=258
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=65 kfs=8
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=8 frame=65 ts=2.1662890911102295
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=66 kfs=9 matches=246
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=2.1662890911102295 kfs=9
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=66 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=67 kfs=9 matches=253
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=67 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=68 kfs=9 matches=243
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=68 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=69 kfs=9 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=69 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=70 kfs=9 matches=242
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=70 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=71 kfs=9 matches=263
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=71 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=72 kfs=9 matches=258
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=72 kfs=9
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=73 kfs=9 matches=254
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=73 kfs=9
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=9 frame=73 ts=2.4328949451446533
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=2.4328949451446533 kfs=10
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=74 kfs=10 matches=259
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=74 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=75 kfs=10 matches=266
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=75 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=76 kfs=10 matches=260
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=76 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=77 kfs=10 matches=247
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=77 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=78 kfs=10 matches=254
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=78 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=79 kfs=10 matches=261
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=79 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=80 kfs=10 matches=247
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=80 kfs=10
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=81 kfs=10 matches=247
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=81 kfs=10
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=10 frame=81 ts=2.6995179653167725
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=82 kfs=11 matches=236
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=2.6995179653167725 kfs=11
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=82 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=83 kfs=11 matches=235
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=83 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=84 kfs=11 matches=215
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=84 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=85 kfs=11 matches=185
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=85 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=86 kfs=11 matches=185
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=86 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=87 kfs=11 matches=175
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=87 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=88 kfs=11 matches=156
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=88 kfs=11
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=89 kfs=11 matches=139
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=89 kfs=11
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=11 frame=89 ts=2.9661390781402588
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=2.9661390781402588 kfs=12
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=90 kfs=12 matches=130
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=90 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=91 kfs=12 matches=131
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=91 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=92 kfs=12 matches=129
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=92 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=93 kfs=12 matches=120
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=93 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=94 kfs=12 matches=123
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=94 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=95 kfs=12 matches=126
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=95 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=96 kfs=12 matches=119
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=96 kfs=12
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=97 kfs=12 matches=126
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=97 kfs=12
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=12 frame=97 ts=3.2327480316162109
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=98 kfs=13 matches=130
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=98 kfs=13
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=3.2327480316162109 kfs=13
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=99 kfs=13 matches=139
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=99 kfs=13
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=100 kfs=13 matches=136
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=100 kfs=13
+frame=100 t=3.3327350616455078 imu_batch=8 tracking_state=2 lost_run=0
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=101 kfs=13 matches=129
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=101 kfs=13
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=102 kfs=13 matches=127
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=102 kfs=13
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=103 kfs=13 matches=132
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=103 kfs=13
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=104 kfs=13 matches=135
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=104 kfs=13
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=105 kfs=13 matches=140
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=105 kfs=13
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=13 frame=105 ts=3.4993829727172852
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=106 kfs=14 matches=135
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=106 kfs=14
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=3.4993829727172852 kfs=14
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=107 kfs=14 matches=145
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=107 kfs=14
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=108 kfs=14 matches=134
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=108 kfs=14
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=109 kfs=14 matches=141
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=109 kfs=14
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=110 kfs=14 matches=144
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=110 kfs=14
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=111 kfs=14 matches=142
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=111 kfs=14
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=112 kfs=14 matches=134
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=112 kfs=14
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=113 kfs=14 matches=131
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=113 kfs=14
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=14 frame=113 ts=3.7659881114959717
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=114 kfs=15 matches=137
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=3.7659881114959717 kfs=15
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=114 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=115 kfs=15 matches=142
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=115 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=116 kfs=15 matches=144
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=116 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=117 kfs=15 matches=154
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=117 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=118 kfs=15 matches=145
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=118 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=119 kfs=15 matches=146
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=119 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=120 kfs=15 matches=142
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=120 kfs=15
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=121 kfs=15 matches=146
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=121 kfs=15
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=15 frame=121 ts=4.0326049327850342
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=122 kfs=16 matches=146
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=122 kfs=16
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=4.0326049327850342 kfs=16
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=123 kfs=16 matches=150
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=123 kfs=16
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=124 kfs=16 matches=152
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=124 kfs=16
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=125 kfs=16 matches=153
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=125 kfs=16
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=126 kfs=16 matches=157
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=126 kfs=16
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=127 kfs=16 matches=160
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=127 kfs=16
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=128 kfs=16 matches=153
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=128 kfs=16
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=129 kfs=16 matches=147
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=129 kfs=16
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=16 frame=129 ts=4.2992238998413086
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=130 kfs=17 matches=151
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=130 kfs=17
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=4.2992238998413086 kfs=17
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=131 kfs=17 matches=166
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=131 kfs=17
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=132 kfs=17 matches=162
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=132 kfs=17
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=133 kfs=17 matches=147
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=133 kfs=17
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=134 kfs=17 matches=149
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=134 kfs=17
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=135 kfs=17 matches=148
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=135 kfs=17
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=136 kfs=17 matches=153
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=136 kfs=17
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=137 kfs=17 matches=156
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=137 kfs=17
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=17 frame=137 ts=4.5658400058746338
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=138 kfs=18 matches=165
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=138 kfs=18
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=4.5658400058746338 kfs=18
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=139 kfs=18 matches=164
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=139 kfs=18
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=140 kfs=18 matches=163
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=140 kfs=18
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=141 kfs=18 matches=169
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=141 kfs=18
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=142 kfs=18 matches=168
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=142 kfs=18
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=143 kfs=18 matches=168
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=143 kfs=18
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=144 kfs=18 matches=162
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=144 kfs=18
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=145 kfs=18 matches=160
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=145 kfs=18
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=18 frame=145 ts=4.8324589729309082
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=146 kfs=19 matches=150
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=146 kfs=19
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=4.8324589729309082 kfs=19
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=147 kfs=19 matches=148
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=147 kfs=19
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=148 kfs=19 matches=149
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=148 kfs=19
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=149 kfs=19 matches=149
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=149 kfs=19
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=150 kfs=19 matches=141
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=150 kfs=19
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=151 kfs=19 matches=153
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=151 kfs=19
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=152 kfs=19 matches=156
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=152 kfs=19
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=153 kfs=19 matches=157
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=153 kfs=19
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=19 frame=153 ts=5.099092960357666
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1510
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=154 kfs=20 matches=161
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=154 kfs=20
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=5.099092960357666 kfs=20
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=155 kfs=20 matches=172
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=155 kfs=20
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=156 kfs=20 matches=175
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=156 kfs=20
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=157 kfs=20 matches=173
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=157 kfs=20
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=158 kfs=20 matches=172
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=158 kfs=20
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=159 kfs=20 matches=169
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=159 kfs=20
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=160 kfs=20 matches=163
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=160 kfs=20
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=161 kfs=20 matches=161
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=161 kfs=20
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=20 frame=161 ts=5.3657350540161133
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=162 kfs=21 matches=162
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=162 kfs=21
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=5.3657350540161133 kfs=21
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=163 kfs=21 matches=170
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=163 kfs=21
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=164 kfs=21 matches=172
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=164 kfs=21
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=165 kfs=21 matches=169
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=165 kfs=21
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=166 kfs=21 matches=173
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=166 kfs=21
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=167 kfs=21 matches=174
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=167 kfs=21
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=168 kfs=21 matches=166
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=168 kfs=21
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=169 kfs=21 matches=181
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=169 kfs=21
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=21 frame=169 ts=5.6323180198669434
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=170 kfs=22 matches=174
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=170 kfs=22
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=5.6323180198669434 kfs=22
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=171 kfs=22 matches=169
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=171 kfs=22
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=172 kfs=22 matches=180
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=172 kfs=22
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=173 kfs=22 matches=196
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=173 kfs=22
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=174 kfs=22 matches=199
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=174 kfs=22
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=175 kfs=22 matches=212
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=175 kfs=22
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=176 kfs=22 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=176 kfs=22
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=177 kfs=22 matches=240
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=177 kfs=22
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=22 frame=177 ts=5.8989379405975342
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=178 kfs=23 matches=241
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=178 kfs=23
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=5.8989379405975342 kfs=23
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=179 kfs=23 matches=260
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=179 kfs=23
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=180 kfs=23 matches=261
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=180 kfs=23
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=181 kfs=23 matches=271
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=181 kfs=23
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=182 kfs=23 matches=268
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=182 kfs=23
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=183 kfs=23 matches=285
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=183 kfs=23
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=184 kfs=23 matches=268
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=184 kfs=23
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=185 kfs=23 matches=256
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=185 kfs=23
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=23 frame=185 ts=6.1655740737915039
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=186 kfs=24 matches=257
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=186 kfs=24
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=6.1655740737915039 kfs=24
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=187 kfs=24 matches=261
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=187 kfs=24
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=188 kfs=24 matches=270
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=188 kfs=24
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=189 kfs=24 matches=242
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=189 kfs=24
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=190 kfs=24 matches=243
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=190 kfs=24
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=191 kfs=24 matches=244
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=191 kfs=24
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=192 kfs=24 matches=244
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=192 kfs=24
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=193 kfs=24 matches=250
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=193 kfs=24
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=24 frame=193 ts=6.4321670532226562
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=194 kfs=25 matches=253
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=194 kfs=25
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=6.4321670532226562 kfs=25
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=195 kfs=25 matches=254
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=195 kfs=25
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=196 kfs=25 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=196 kfs=25
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=197 kfs=25 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=197 kfs=25
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=198 kfs=25 matches=235
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=198 kfs=25
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=199 kfs=25 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=199 kfs=25
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=200 kfs=25 matches=215
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=200 kfs=25
+frame=200 t=6.6654670238494873 imu_batch=9 tracking_state=2 lost_run=0
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=201 kfs=25 matches=208
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=201 kfs=25
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=25 frame=201 ts=6.698793888092041
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=202 kfs=26 matches=218
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=202 kfs=26
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=6.698793888092041 kfs=26
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=203 kfs=26 matches=226
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=203 kfs=26
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=204 kfs=26 matches=218
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=204 kfs=26
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=205 kfs=26 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=205 kfs=26
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=206 kfs=26 matches=227
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=206 kfs=26
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=207 kfs=26 matches=237
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=207 kfs=26
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=208 kfs=26 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=208 kfs=26
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=209 kfs=26 matches=226
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=209 kfs=26
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=26 frame=209 ts=6.965446949005127
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=210 kfs=27 matches=228
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=210 kfs=27
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=6.965446949005127 kfs=27
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=211 kfs=27 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=211 kfs=27
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=212 kfs=27 matches=226
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=212 kfs=27
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=213 kfs=27 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=213 kfs=27
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=214 kfs=27 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=214 kfs=27
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=215 kfs=27 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=215 kfs=27
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=216 kfs=27 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=216 kfs=27
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=217 kfs=27 matches=226
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=217 kfs=27
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=27 frame=217 ts=7.2320320606231689
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=218 kfs=28 matches=219
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=218 kfs=28
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=7.2320320606231689 kfs=28
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=219 kfs=28 matches=227
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=219 kfs=28
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=220 kfs=28 matches=232
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=220 kfs=28
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=221 kfs=28 matches=232
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=221 kfs=28
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=222 kfs=28 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=222 kfs=28
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=223 kfs=28 matches=220
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=223 kfs=28
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=224 kfs=28 matches=223
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=224 kfs=28
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=225 kfs=28 matches=221
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=225 kfs=28
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=28 frame=225 ts=7.4986400604248047
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=226 kfs=29 matches=229
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=226 kfs=29
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=7.4986400604248047 kfs=29
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=227 kfs=29 matches=223
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=227 kfs=29
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=228 kfs=29 matches=223
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=228 kfs=29
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=229 kfs=29 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=229 kfs=29
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=230 kfs=29 matches=215
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=230 kfs=29
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=231 kfs=29 matches=238
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=231 kfs=29
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=232 kfs=29 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=232 kfs=29
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=233 kfs=29 matches=221
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=233 kfs=29
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=29 frame=233 ts=7.7652609348297119
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=234 kfs=30 matches=225
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=234 kfs=30
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=7.7652609348297119 kfs=30
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=235 kfs=30 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=235 kfs=30
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=236 kfs=30 matches=236
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=236 kfs=30
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=237 kfs=30 matches=221
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=237 kfs=30
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=238 kfs=30 matches=212
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=238 kfs=30
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=239 kfs=30 matches=221
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=239 kfs=30
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=240 kfs=30 matches=221
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=240 kfs=30
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=241 kfs=30 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=241 kfs=30
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=30 frame=241 ts=8.0318961143493652
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=242 kfs=31 matches=217
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=242 kfs=31
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=8.0318961143493652 kfs=31
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=243 kfs=31 matches=215
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=243 kfs=31
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=244 kfs=31 matches=220
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=244 kfs=31
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=245 kfs=31 matches=228
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=245 kfs=31
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=246 kfs=31 matches=239
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=246 kfs=31
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=247 kfs=31 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=247 kfs=31
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=248 kfs=31 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=248 kfs=31
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=249 kfs=31 matches=240
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=249 kfs=31
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=31 frame=249 ts=8.2984969615936279
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=250 kfs=32 matches=236
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=250 kfs=32
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=8.2984969615936279 kfs=32
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=251 kfs=32 matches=241
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=251 kfs=32
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=252 kfs=32 matches=229
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=252 kfs=32
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=253 kfs=32 matches=239
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=253 kfs=32
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=254 kfs=32 matches=231
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=254 kfs=32
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=255 kfs=32 matches=234
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=255 kfs=32
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=256 kfs=32 matches=239
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=256 kfs=32
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=257 kfs=32 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=257 kfs=32
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=32 frame=257 ts=8.5651190280914307
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=258 kfs=33 matches=239
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=258 kfs=33
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=8.5651190280914307 kfs=33
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=259 kfs=33 matches=220
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=259 kfs=33
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=260 kfs=33 matches=225
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=260 kfs=33
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=261 kfs=33 matches=219
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=261 kfs=33
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=262 kfs=33 matches=208
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=262 kfs=33
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=263 kfs=33 matches=211
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=263 kfs=33
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=264 kfs=33 matches=199
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=264 kfs=33
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=265 kfs=33 matches=193
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=265 kfs=33
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=33 frame=265 ts=8.8317511081695557
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=266 kfs=34 matches=195
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=266 kfs=34
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=8.8317511081695557 kfs=34
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=267 kfs=34 matches=196
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=267 kfs=34
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=268 kfs=34 matches=195
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=268 kfs=34
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=269 kfs=34 matches=202
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=269 kfs=34
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=270 kfs=34 matches=209
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=270 kfs=34
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=271 kfs=34 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=271 kfs=34
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=272 kfs=34 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=272 kfs=34
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=273 kfs=34 matches=217
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=273 kfs=34
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=34 frame=273 ts=9.0983641147613525
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=274 kfs=35 matches=216
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=274 kfs=35
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=9.0983641147613525 kfs=35
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=275 kfs=35 matches=221
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=275 kfs=35
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=276 kfs=35 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=276 kfs=35
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=277 kfs=35 matches=233
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=277 kfs=35
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=278 kfs=35 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=278 kfs=35
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=279 kfs=35 matches=211
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=279 kfs=35
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=280 kfs=35 matches=223
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=280 kfs=35
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=281 kfs=35 matches=224
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=281 kfs=35
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=35 frame=281 ts=9.3649680614471436
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=282 kfs=36 matches=214
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=282 kfs=36
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=9.3649680614471436 kfs=36
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=283 kfs=36 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=283 kfs=36
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=284 kfs=36 matches=217
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=284 kfs=36
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=285 kfs=36 matches=212
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=285 kfs=36
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=286 kfs=36 matches=215
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=286 kfs=36
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=287 kfs=36 matches=222
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=287 kfs=36
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=288 kfs=36 matches=234
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=288 kfs=36
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=289 kfs=36 matches=232
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=289 kfs=36
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=36 frame=289 ts=9.6315910816192627
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=290 kfs=37 matches=232
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=290 kfs=37
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=9.6315910816192627 kfs=37
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=291 kfs=37 matches=232
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=291 kfs=37
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=292 kfs=37 matches=231
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=292 kfs=37
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=293 kfs=37 matches=230
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=293 kfs=37
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=294 kfs=37 matches=220
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=294 kfs=37
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=295 kfs=37 matches=198
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=295 kfs=37
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=296 kfs=37 matches=208
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=296 kfs=37
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=297 kfs=37 matches=205
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=297 kfs=37
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=37 frame=297 ts=9.8982150554656982
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=298 kfs=38 matches=210
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=298 kfs=38
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=299 kfs=38 matches=196
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled for raspi export window=9.8982150554656982 kfs=38
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=299 kfs=38
+Shutdown
+mpLocalMapper is not finished
+mpLoopCloser is not finished
+Starting to write the save binary file
+End to write save binary file
+
+Saving camera trajectory to /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_300_traj.csv ...
+There are 1 maps in the atlas
+  Map 0 has 38 KFs
+
+CSV camera trajectory saved!
+
+Saving keyframe trajectory to /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_300_keyframes_tum.txt ...
+
+TUM keyframe trajectory saved!
+Exported 575 map points to /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_300_mappoints.xyz
+Exported 575 map points to /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_300_mappoints.ply

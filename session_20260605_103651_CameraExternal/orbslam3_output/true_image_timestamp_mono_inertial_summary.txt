@@ -1,0 +1,69 @@
+ORB-SLAM3 true-image-timestamp mono-inertial attempt
+Date: 2026-06-08
+
+Goal:
+- Run ORB-SLAM3 monocular-inertial without the gopro_slam wrapper.
+- Use the real image timestamps from video_timestamps.csv.
+- Use the original IMU CSV directly instead of the GoPro-like JSON telemetry wrapper.
+
+Code changes:
+- Updated:
+  /home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/Examples/Monocular-Inertial/raspi_mono_inertial_slam.cc
+- Added direct IMU CSV loading via --input_imu_csv.
+- Uses video_timestamps.csv first frame as the common time origin.
+- Converts gyro from deg/s to rad/s unless --gyro_in_radians is passed.
+- Keeps the true frame-relative timestamp even when frames are skipped, unless --zero_start_frame is explicitly passed.
+
+Rebuild log:
+- /home/zzzjt/projects/session_20260605_103651/orbslam3_output/build_raspi_mono_inertial_slam_true_ts.log
+
+Repro script:
+- /home/zzzjt/projects/session_20260605_103651/orbslam3_output/run_orbslam3_true_image_timestamps.sh
+
+Full run:
+- stdout:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_image_ts_csvimu_stdout.log
+- stderr:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_image_ts_csvimu_stderr.log
+- result:
+  exits with code 139 before trajectory/map export
+
+Verified timing:
+- frame timestamps: 3721
+- first frame relative time: 0
+- last frame relative time: 123.977 s
+- IMU samples: 30653
+- first IMU relative time: 0.0656202 s
+- last IMU relative time: 124.151 s
+
+Observed progress before crash:
+- ORB-SLAM3 starts as Monocular-Inertial.
+- The fisheye camera is loaded as Kannala-Brandt.
+- The video opens with 3721 frames at 30 FPS.
+- Initialization succeeds.
+- Initial map is created with 479 map points.
+- Keyframes reach frame 9 at timestamp 0.299957 s.
+
+Representative final messages:
+- New Map created with 479 points
+- ProcessNewKeyFrame: popped KF id=0 frame=0 ts=0
+- ProcessNewKeyFrame: popped KF id=1 frame=9 ts=0.2999570369720459
+- LocalMapping: optimization block end
+- LocalMapping: skipping LoopClosing InsertKeyFrame
+- process exits with code 139
+
+Short validation run:
+- max_frames=10 completes successfully.
+- Outputs:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_image_ts_csvimu_short_atlas.osa
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_image_ts_csvimu_short_keyframes_tum.txt
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_image_ts_csvimu_short_mappoints.ply
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_image_ts_csvimu_short_mappoints.xyz
+- Short result: 2 keyframes, 479 map points.
+
+Interpretation:
+- The requested non-gopro_slam, true-image-timestamp data path is implemented and verified.
+- The remaining failure is not caused by the gopro_slam wrapper.
+- The remaining failure is inside the ORB-SLAM3 backend after the first map/keyframes are created.
+- The current local ORB-SLAM3 fork still needs backend crash debugging before it can produce a full-session mono-inertial atlas for this dataset.
+

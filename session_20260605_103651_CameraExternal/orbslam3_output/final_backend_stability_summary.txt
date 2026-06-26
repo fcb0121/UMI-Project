@@ -1,0 +1,77 @@
+ORB-SLAM3 final backend stability pass
+Date: 2026-06-09
+
+Purpose:
+- Continue after the interrupted run.
+- Make the custom true-timestamp ORB-SLAM3 runner stable enough for the next data-collection round.
+- Avoid the two known backend crash points.
+
+Code changes kept:
+- raspi_mono_inertial_slam.cc
+  - Direct IMU CSV input.
+  - Real image timestamp input.
+  - SIGSEGV/SIGABRT backtrace handler.
+- Optimizer.cc / Optimizer.h
+  - PoseOptimization now rejects bad/insufficient inputs before building a g2o graph.
+  - PoseOptimization checks finite frame pose, finite map points, valid keypoint octaves, valid edge counts, and optimizer return values.
+  - The main mono-inertial InertialOptimization now returns bool instead of void.
+  - InertialOptimization checks keyframe count, valid IMU preintegration dt/covariance, valid edge count, finite scale/bias/gravity output.
+  - The inertial optimizer graph is allocated on the heap to avoid this fork's g2o destructor double-free path.
+- LocalMapping.cc
+  - IMU initialization is disabled by default for the Raspberry Pi export path.
+  - To explicitly experiment with the unstable inertial backend, set:
+    RASPI_ORBSLAM3_ENABLE_IMU_INIT=1
+  - If enabled, IMU initialization is still gated by time/keyframe/motion/preintegration checks.
+  - CreateNewMapPoints is enabled, so the map exports real triangulated ORB points.
+- Tracking.cc
+  - Before IMU initialization, the unsafe visual PoseOptimization path is skipped for IMU_MONOCULAR.
+
+Why IMU initialization remains disabled by default:
+- With current data, the first crash is in visual PoseOptimization:
+  EdgeSE3ProjectXYZOnlyPose::linearizeOplus / g2o optimization.
+- If that path is skipped, the next crash is in inertial initialization:
+  LocalMapping::InitializeIMU -> Optimizer::InertialOptimization -> g2o double free.
+- The inertial optimizer is still unsafe in this local ORB-SLAM3 fork.
+- A robust production behavior is to avoid killing the process and allow full export.
+
+Final stable full-session export:
+- Script:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/run_orbslam3_backend_final_stable_full.sh
+- Atlas:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_atlas.osa
+- Trajectory CSV:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_traj.csv
+- Keyframes:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_keyframes_tum.txt
+- Map points:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_mappoints.ply
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_mappoints.xyz
+- Logs:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_stdout.log
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_backend_final_stable_full_stderr.log
+
+Final stable full-session statistics:
+- processed frames: 3721
+- trajectory CSV lines including header: 3722
+- keyframes: 350
+- map points: 722
+- atlas size: about 81 MB
+- exit code: 0
+
+Important quality note:
+- This is a crash-stable ORB-SLAM3 export path, not a trusted metric mono-inertial SLAM result.
+- For the current session, the reliable metric result is still OpenVINS ZUPT plus VIO-guided sparse mapping.
+- The ORB-SLAM3 output is useful for checking whether new visual data is trackable and whether the atlas/export path runs end to end.
+
+Recommendation for the next SLAM data collection:
+- Start with 10-20 seconds of deliberate 6-DoF motion, not static video.
+- Include slow translations in x/y/z and rotations around roll/pitch/yaw.
+- Avoid long static/low-speed sections before the system has initialized.
+- Keep exposure stable and avoid motion blur.
+- Include textured surfaces at multiple depths.
+- Keep camera and IMU rigidly mounted.
+- Record a short 1-2 minute test first and run this final stable script.
+- If visual tracking is good, then try:
+  RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 /home/zzzjt/projects/session_20260605_103651/orbslam3_output/run_orbslam3_backend_final_stable_full.sh
+  on a copied script/session to test the inertial backend.
+

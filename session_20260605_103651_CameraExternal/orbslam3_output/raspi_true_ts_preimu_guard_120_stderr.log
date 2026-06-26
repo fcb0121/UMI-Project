@@ -1,0 +1,24 @@
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+IMU.InsertKFsWhenLost optional parameter does not exist...
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+double free or corruption (out)
+
+[RASPI_CRASH] Caught signal 6
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(_Z21PrintBacktraceAndExiti+0x3d)[0x56944446881d]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x728d2a446520]
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x728d2a49a9fc]
+/lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x728d2a446476]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x728d2a42c7f3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x89676)[0x728d2a48d676]
+/lib/x86_64-linux-gnu/libc.so.6(+0xa0cfc)[0x728d2a4a4cfc]
+/lib/x86_64-linux-gnu/libc.so.6(+0xa2e70)[0x728d2a4a6e70]
+/lib/x86_64-linux-gnu/libc.so.6(free+0x73)[0x728d2a4a9453]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/Thirdparty/g2o/lib/libg2o.so(_ZN3g2o16OptimizableGraphD1Ev+0x39)[0x728d2a3b97b9]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM39Optimizer20InertialOptimizationEPNS_3MapERN5Eigen6MatrixIdLi3ELi3ELi0ELi3ELi3EEERdRNS4_IdLi3ELi1ELi0ELi3ELi1EEES9_bRNS4_IdLin1ELin1ELi0ELin1ELin1EEEbbff+0x17f4)[0x728d2b43d444]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM312LocalMapping13InitializeIMUEffb+0x8f0)[0x728d2b3bbb50]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM312LocalMapping3RunEv+0xa77)[0x728d2b3bd9a7]
+/lib/x86_64-linux-gnu/libstdc++.so.6(+0xdc253)[0x728d2a729253]
+/lib/x86_64-linux-gnu/libc.so.6(+0x94ac3)[0x728d2a498ac3]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x44)[0x728d2a529a04]

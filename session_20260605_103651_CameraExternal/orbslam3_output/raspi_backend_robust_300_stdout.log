@@ -1,0 +1,86 @@
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular-Inertial
+Loading settings from /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_imx219_mono_inertial_noisy_820x616.yaml
+	-Loaded camera 1
+	-Loaded image info
+	-Loaded IMU calibration
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Kannala-Brandt): [ 203.583 203.286 415.452 309.098 -0.0119256 -0.00395131 0.000405187 -0.000302394 ]
+	-Original image size: [ 820 , 616 ]
+	-Current image size: [ 820 , 616 ]
+	-Sequence FPS: 30
+	-Gyro noise: 0.035
+	-Accelerometer noise: 0.2
+	-Gyro walk: 0.002
+	-Accelerometer walk: 0.02
+	-IMU frequency: 247
+	-Features per image: 1500
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 15
+	-Min FAST threshold: 5
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+There are 1 cameras in the atlas
+Camera 0 is fisheye
+Discard points further than 20 m from current camera
+Video opened using backend FFMPEG
+There are 3721 frames in total
+video FPS 30
+IMU samples 30653
+Frame timestamps 3721 first_abs=1.78063e+09 first_rel=0 last_rel=123.977
+IMU first_rel=0.0656202 last_rel=124.151
+line 1873 keyframes 0MapPoints0
+frame=0 t=0 imu_batch=0 tracking_state=1 lost_run=0
+init_success=0
+ tag_init_success=0
+Empty IMU measurements vector!!!
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:0; Map init KF:0
+New Map created with 479 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=0 frame=0 ts=0
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=6942
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin

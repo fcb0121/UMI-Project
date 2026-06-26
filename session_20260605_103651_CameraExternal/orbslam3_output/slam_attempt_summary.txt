@@ -1,0 +1,59 @@
+ORB-SLAM3 / OpenVINS mapping attempt summary
+Date: 2026-06-08
+
+Goal:
+- Continue from the stable OpenVINS VIO run toward a full SLAM mapping result.
+
+ORB-SLAM3 assets prepared:
+- raspi_imx219_mono_inertial_noisy.yaml
+- raspi_imx219_mono_inertial_noisy_820x616.yaml
+- raspi_imx219_mono_inertial_820x616.yaml
+- imu_data_orbslam3.json
+- imu_data_orbslam3_startzero.json
+
+Important input fixes:
+- Converted gyro values from deg/s to rad/s for ORB-SLAM3 JSON input.
+- Added a CORI stream placeholder because the gopro_slam binary reads CORI.samples.
+- Created a video-relative timestamp JSON and a startzero JSON variant.
+- Generated full-resolution and 820x616 half-resolution ORB-SLAM3 settings.
+
+ORB-SLAM3 result:
+- The local Docker image chicheng/orb_slam3:latest runs and loads the custom configs.
+- The video opens correctly: 3721 frames at 30 FPS.
+- ORB-SLAM3 repeatedly initializes temporary maps with hundreds of MapPoints.
+- It then loses local tracking before/around IMU initialization and resets the active map.
+- Runs terminate with exit code 139 after repeated reset/initialization cycles.
+- No stable .osa atlas map or ORB-SLAM3 camera trajectory was produced.
+
+Representative failure messages:
+- TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized()
+- Fail to track local map!
+- IMU is not or recently initialized. Reseting active map...
+- scale too small
+
+OpenVINS sparse point export:
+- Used the current best OpenVINS config:
+  estimator_config_dynamic_ts0_frontend_noisyimu_zupt.yaml
+- Added a subscriber/exporter for:
+  /ov_msckf/points_slam
+  /ov_msckf/points_msckf
+- Output files:
+  openvins_last_slam.ply
+  openvins_last_slam.xyz
+  openvins_last_msckf.ply
+  openvins_last_msckf.xyz
+  openvins_points_summary.txt
+- Final exported point counts:
+  slam: 20 points
+  msckf: 1 point
+
+Interpretation:
+- OpenVINS is now a usable VIO trajectory source for this session, especially with noisy IMU + ZUPT.
+- OpenVINS does not provide a full reusable SLAM map; its SLAM points are sparse filter landmarks.
+- ORB-SLAM3 is the right next target for a reusable sparse atlas, but the current custom run is not stable yet.
+
+Recommended next technical routes:
+- Patch/build ORB-SLAM3 from source with better logging and a safer reset path instead of using the opaque Docker binary.
+- Try ORB-SLAM3 mono-inertial with a dataset format that uses actual image timestamps rather than the gopro_slam wrapper's frame_idx/fps timing.
+- Use the OpenVINS ZUPT trajectory as the trusted pose prior and build a separate visual map/point cloud offline.
+- For dense metric mapping, collect stereo/RGB-D/LiDAR data; monocular-inertial alone is mainly sparse SLAM.

@@ -1,0 +1,65 @@
+ORB-SLAM3 backend crash fix attempt
+Date: 2026-06-08
+
+Goal:
+- Continue from the true-image-timestamp ORB-SLAM3 mono-inertial runner.
+- Resolve the remaining backend crash and try to produce a complete-session ORB-SLAM3 map.
+
+Main code touched:
+- /home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/Examples/Monocular-Inertial/raspi_mono_inertial_slam.cc
+- /home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/src/Tracking.cc
+- /home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/src/LocalMapping.cc
+- /home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/CMakeLists.txt
+
+Crash diagnosis:
+- Added a SIGSEGV/SIGABRT backtrace handler to raspi_mono_inertial_slam.
+- The original full run crashed in:
+  Tracking::TrackReferenceKeyFrame -> Optimizer::PoseOptimization -> g2o::BaseVertex<6, SE3Quat>::push
+- After guarding that path, the crash moved to:
+  Tracking::TrackWithMotionModel -> Optimizer::PoseOptimization -> g2o::BaseVertex<6, SE3Quat>::push
+- After guarding all pre-IMU-init visual PoseOptimization calls, the next crash moved to:
+  LocalMapping::InitializeIMU -> Optimizer::InertialOptimization -> g2o::OptimizableGraph destructor
+- The inertial optimizer fails with:
+  double free or corruption (out)
+
+Stability fixes applied:
+- For IMU_MONOCULAR before successful IMU initialization, ordinary visual PoseOptimization is skipped.
+- For this Raspberry Pi export run, LocalMapping IMU initialization is disabled because InertialOptimization consistently aborts inside g2o.
+- CreateNewMapPoints was restored after the crash was isolated, so ORB-SLAM3 can triangulate additional map points.
+- LoopClosing insertion and several heavy backend optimizers remain disabled from the earlier debugging phase.
+
+Best complete ORB-SLAM3 export produced:
+- Atlas:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_atlas.osa
+- Full frame trajectory CSV:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_traj.csv
+- Keyframe trajectory:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_keyframes_tum.txt
+- Sparse map points:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_mappoints.ply
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_mappoints.xyz
+- Logs:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_stdout.log
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_true_ts_noimuinit_createnew_full_stderr.log
+
+Complete export statistics:
+- processed frames: 3721
+- trajectory CSV lines including header: 3722
+- keyframes: 348
+- exported ORB map points: 744
+- atlas size: about 80 MB
+- process exit code: 0
+
+Quality warning:
+- This run is a stable ORB-SLAM3 atlas/export, but it is not a trustworthy mono-inertial SLAM solution.
+- IMU initialization is disabled, and pre-IMU visual pose optimization is skipped to avoid this fork's g2o crashes.
+- The resulting trajectory changes only slightly over the whole sequence, so it should not replace the OpenVINS ZUPT trajectory.
+- For metric motion and mapping, the current best output remains:
+  /home/zzzjt/projects/session_20260605_103651/openvins_output/vio_sparse_map.ply
+  /home/zzzjt/projects/session_20260605_103651/openvins_output/traj_estimate_dynamic_ts0_frontend_noisyimu_zupt.txt
+
+Practical conclusion:
+- The remaining crash was solved enough to produce complete ORB-SLAM3 exports.
+- The real inertial backend problem is not fully solved; this ORB-SLAM3 fork's g2o inertial optimization remains unstable on this dataset.
+- The complete ORB-SLAM3 atlas should be treated as a debugging artifact, while OpenVINS + VIO-guided sparse mapping remains the more trustworthy result.
+
