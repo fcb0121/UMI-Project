@@ -1,0 +1,2 @@
+msckf: messages=3631 points=1
+slam: messages=3631 points=20

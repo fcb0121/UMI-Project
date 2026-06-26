@@ -1,0 +1,50 @@
+OpenVINS divergence tuning summary
+Date: 2026-06-08
+
+Baseline that initialized but diverged:
+- Config: estimator_config_dynamic_ts0_frontend.yaml
+- Trajectory: traj_estimate_dynamic_ts0_frontend.txt
+- Samples: 3654
+- Final position: -15697.342200 -17024.122001 -7746.266874
+- Final distance from origin: 24417.860933 m
+- MSCKF nonzero update ratio: 0.1449
+
+Noisy IMU:
+- Config: estimator_config_dynamic_ts0_frontend_noisyimu.yaml
+- IMU config: kalibr_imu_chain_noisy.yaml
+- Trajectory: traj_estimate_dynamic_ts0_frontend_noisyimu.txt
+- Log: run_openvins_dynamic_ts0_frontend_noisyimu.log
+- Samples: 3654
+- Final position: 13.919992 17.860594 14.254853
+- Final distance from origin: 26.757575 m
+- Cumulative path: 131.070322 m
+- MSCKF nonzero update ratio: 0.3362
+
+Noisy IMU + anchored MSCKF + longer clone window:
+- Config: estimator_config_dynamic_ts0_frontend_noisyimu_anchored.yaml
+- Trajectory: traj_estimate_dynamic_ts0_frontend_noisyimu_anchored.txt
+- Log: run_openvins_dynamic_ts0_frontend_noisyimu_anchored.log
+- Samples: 3654
+- Final position: 72.385742 9.293456 -2.345222
+- Final distance from origin: 73.017560 m
+- Cumulative path: 398.423220 m
+- MSCKF nonzero update ratio: 0.3831
+- Result: worse than noisy IMU baseline.
+
+Recommended current config: noisy IMU + ZUPT
+- Config: estimator_config_dynamic_ts0_frontend_noisyimu_zupt.yaml
+- IMU config: kalibr_imu_chain_noisy.yaml
+- Trajectory: traj_estimate_dynamic_ts0_frontend_noisyimu_zupt.txt
+- Log: run_openvins_dynamic_ts0_frontend_noisyimu_zupt.log
+- Samples: 3631
+- Final position: 1.552411 4.960298 0.692535
+- Final distance from origin: 5.243486 m
+- Cumulative path: 61.680395 m
+- MSCKF nonzero update ratio: 0.3893
+- ZUPT accepted: 1730
+
+Notes:
+- The Kalibr time shift should remain disabled for this bag: timeshift_cam_imu = 0.0.
+- The original +0.10594867294770188 time shift did not initialize; -0.10594867294770188 failed/aborted.
+- ZUPT result is best numerically, but it assumes low-speed/static intervals. If the session was continuously moving, use the noisy IMU config without ZUPT for a less constrained estimate.
+- ROS shutdown prints class_loader::LibraryUnloadException after rosbag exits; the trajectory file is still written.

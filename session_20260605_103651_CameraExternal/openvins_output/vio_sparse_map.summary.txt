@@ -1,0 +1,4 @@
+selected_frames=303
+points=15341
+step=12
+trajectory=/home/zzzjt/projects/session_20260605_103651/openvins_output/traj_estimate_dynamic_ts0_frontend_noisyimu_zupt.txt

@@ -1,0 +1,60 @@
+Full-session mapping summary
+Date: 2026-06-08
+
+Input session:
+- /home/zzzjt/projects/session_20260605_103651
+
+Trusted VIO trajectory:
+- /home/zzzjt/projects/session_20260605_103651/openvins_output/traj_estimate_dynamic_ts0_frontend_noisyimu_zupt.txt
+- This is the current best OpenVINS monocular-inertial run for this dataset.
+- It uses the noisy-IMU + ZUPT configuration, which fits the recorded data because the session contains many static or low-speed segments.
+
+Full-session sparse map produced:
+- /home/zzzjt/projects/session_20260605_103651/openvins_output/vio_sparse_map.ply
+- /home/zzzjt/projects/session_20260605_103651/openvins_output/vio_sparse_map.xyz
+- /home/zzzjt/projects/session_20260605_103651/openvins_output/vio_sparse_map.summary.txt
+- /home/zzzjt/projects/session_20260605_103651/openvins_output/build_vio_sparse_map.log
+
+Map statistics:
+- selected_frames: 303
+- points: 15341
+- frame step: 12
+- source video: raw_video.mp4
+- source timestamps: video_timestamps.csv
+
+How this map was generated:
+- OpenVINS provides the metric IMU/camera trajectory.
+- Video frames are sampled across the full session.
+- KLT feature tracks are matched between nearby sampled frames.
+- Camera fisheye/equidistant calibration is used for undistortion.
+- Feature pairs are triangulated in the global OpenVINS frame.
+- Points are filtered by baseline, positive depth, reprojection error, and voxel downsampling.
+
+Important interpretation:
+- This is a full-session metric sparse reconstruction guided by the stable OpenVINS trajectory.
+- It is useful for checking scene structure, trajectory consistency, and approximate sparse mapping.
+- It is not yet a complete loop-closure SLAM atlas like a stable ORB-SLAM3 map.
+
+ORB-SLAM3 status:
+- A custom ORB-SLAM3 wrapper and configs were created under:
+  /home/zzzjt/projects/orbslam3_ws/ORB_SLAM3
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output
+- ORB-SLAM3 can initialize a short monocular map and export:
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_mono_slam_short_mappoints.ply
+  /home/zzzjt/projects/session_20260605_103651/orbslam3_output/raspi_mono_slam_short_keyframes_tum.txt
+- Short ORB-SLAM3 result: 479 map points, 2 keyframes.
+- Longer mono or mono-inertial runs still become unstable, repeatedly reset, or segfault.
+
+Representative ORB-SLAM3 failure messages:
+- TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized()
+- Fail to track local map!
+- IMU is not or recently initialized. Reseting active map...
+- scale too small
+- exit code 139
+
+Current best result:
+- Use vio_sparse_map.ply together with the OpenVINS ZUPT trajectory as the current best complete-session mapping output.
+
+Recommended next step:
+- For a true reusable SLAM atlas, continue hardening ORB-SLAM3 on this dataset: keep actual frame timestamps, avoid fragile reset paths, verify IMU noise/bias/time alignment, and re-enable backend mapping stages once the crash source is isolated.
+- For denser and more reliable mapping, collect stereo, RGB-D, or LiDAR data. Monocular-inertial data can produce useful sparse maps, but dense metric reconstruction is fundamentally limited.

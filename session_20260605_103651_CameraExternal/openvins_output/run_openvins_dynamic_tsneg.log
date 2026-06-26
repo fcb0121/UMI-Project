@@ -1,0 +1,916 @@
+Setting printing level to: INFO
+[32moverriding node [1m[32mverbosity[0m[32m with value from ROS!
+[0mSetting printing level to: DEBUG
+VioManagerOptions.h:110 ESTIMATOR PARAMETERS:
+opencv_yaml_parse.h:126 [32moverriding node [1m[32mmax_cameras[0m[32m with value from ROS!
+[0mStateOptions.h:158   - use_fej: 1
+StateOptions.h:159   - integration: 1
+StateOptions.h:160   - calib_cam_extrinsics: 0
+StateOptions.h:161   - calib_cam_intrinsics: 0
+StateOptions.h:162   - calib_cam_timeoffset: 0
+StateOptions.h:163   - calib_imu_intrinsics: 0
+StateOptions.h:164   - calib_imu_g_sensitivity: 0
+StateOptions.h:165   - imu_model: 0
+StateOptions.h:166   - max_clones: 11
+StateOptions.h:167   - max_slam: 50
+StateOptions.h:168   - max_slam_in_update: 25
+StateOptions.h:169   - max_msckf_in_update: 40
+StateOptions.h:170   - max_aruco: 1024
+StateOptions.h:171   - max_cameras: 1
+StateOptions.h:172   - feat_rep_msckf: GLOBAL_3D
+StateOptions.h:173   - feat_rep_slam: ANCHORED_MSCKF_INVERSE_DEPTH
+StateOptions.h:174   - feat_rep_aruco: ANCHORED_MSCKF_INVERSE_DEPTH
+InertialInitializerOptions.h:125 INITIALIZATION SETTINGS:
+InertialInitializerOptions.h:150   - init_window_time: 2.00
+InertialInitializerOptions.h:151   - init_imu_thresh: 0.50
+InertialInitializerOptions.h:152   - init_max_disparity: 0.50
+InertialInitializerOptions.h:153   - init_max_features: 0.50
+InertialInitializerOptions.h:171   - init_dyn_use: 1
+InertialInitializerOptions.h:172   - init_dyn_mle_opt_calib: 0
+InertialInitializerOptions.h:173   - init_dyn_mle_max_iter: 50
+InertialInitializerOptions.h:174   - init_dyn_mle_max_threads: 6
+InertialInitializerOptions.h:175   - init_dyn_mle_max_time: 1.00
+InertialInitializerOptions.h:176   - init_dyn_num_pose: 4
+InertialInitializerOptions.h:177   - init_dyn_min_deg: 2.00
+InertialInitializerOptions.h:178   - init_dyn_inflation_ori: 1.00e+01
+InertialInitializerOptions.h:179   - init_dyn_inflation_vel: 1.00e+02
+InertialInitializerOptions.h:180   - init_dyn_inflation_bg: 1.00e+01
+InertialInitializerOptions.h:181   - init_dyn_inflation_ba: 1.00e+02
+InertialInitializerOptions.h:182   - init_dyn_min_rec_cond: 1.00e-12
+InertialInitializerOptions.h:188   - init_dyn_bias_g: 0.00, 0.00, 0.00
+InertialInitializerOptions.h:189   - init_dyn_bias_a: 0.00, 0.00, 0.00
+InertialInitializerOptions.h:216 NOISE PARAMETERS:
+InertialInitializerOptions.h:224   - gyroscope_noise_density: 0.003500
+InertialInitializerOptions.h:225   - accelerometer_noise_density: 0.02000
+InertialInitializerOptions.h:226   - gyroscope_random_walk: 0.0002000
+InertialInitializerOptions.h:227   - accelerometer_random_walk: 0.002000
+InertialInitializerOptions.h:228   - sigma_pix: 1.00
+opencv_yaml_parse.h:126 [32moverriding node [1m[32mmax_cameras[0m[32m with value from ROS!
+[0mopencv_yaml_parse.h:126 [32moverriding node [1m[32muse_stereo[0m[32m with value from ROS!
+[0mInertialInitializerOptions.h:317 STATE PARAMETERS:
+InertialInitializerOptions.h:318   - gravity_mag: 9.8100
+InertialInitializerOptions.h:319   - gravity: 0.000, 0.000, 9.810
+InertialInitializerOptions.h:320   - num_cameras: 1
+InertialInitializerOptions.h:321   - use_stereo: 0
+InertialInitializerOptions.h:322   - downsize cameras: 1
+InertialInitializerOptions.h:329   - calib_camimu_dt: -0.1059
+InertialInitializerOptions.h:344 cam_0_fisheye:1
+cam_0_wh:
+820 x 616
+cam_0_intrinsic(0:3):
+203.583 203.286 415.452 309.098
+cam_0_intrinsic(4:7):
+  -0.0119256  -0.00395131  0.000405187 -0.000302394
+cam_0_extrinsic(0:3):
+   -0.714305   0.00448774 -0.000512894      0.69982
+cam_0_extrinsic(4:6):
+0.0311244  0.102447 0.0307295
+T_C0toI:
+   0.999959 -0.00569336  0.00701394  -0.0307554
+-0.00712909  -0.0204631    0.999765   -0.028404
+-0.00554849   -0.999774  -0.0205028    0.103226
+          0           0           0           1
+
+opencv_yaml_parse.h:126 [32moverriding node [1m[32mrecord_timing_information[0m[32m with value from ROS!
+[0mopencv_yaml_parse.h:126 [32moverriding node [1m[32mrecord_timing_filepath[0m[32m with value from ROS!
+[0mVioManagerOptions.h:123   - dt_slam_delay: 1.0
+VioManagerOptions.h:124   - zero_velocity_update: 0
+VioManagerOptions.h:125   - zupt_max_velocity: 0.10
+VioManagerOptions.h:126   - zupt_noise_multiplier: 10.00
+VioManagerOptions.h:127   - zupt_max_disparity: 0.5000
+VioManagerOptions.h:128   - zupt_only_at_beginning?: 0
+VioManagerOptions.h:129   - record timing?: 1
+VioManagerOptions.h:130   - record timing filepath: /tmp/traj_timing.txt
+opencv_yaml_parse.h:126 [32moverriding node [1m[32muse_stereo[0m[32m with value from ROS!
+[0mopencv_yaml_parse.h:400 the node multi_threading_pubs of type [b] was not found (not required)...
+opencv_yaml_parse.h:400 the node multi_threading_subs of type [b] was not found (not required)...
+VioManagerOptions.h:486 FEATURE TRACKING PARAMETERS:
+VioManagerOptions.h:487   - use_stereo: 0
+VioManagerOptions.h:488   - use_klt: 1
+VioManagerOptions.h:489   - use_aruco: 0
+VioManagerOptions.h:490   - downsize aruco: 1
+VioManagerOptions.h:491   - downsize cameras: 1
+VioManagerOptions.h:492   - num opencv threads: 4
+VioManagerOptions.h:493   - use multi-threading pubs: 1
+VioManagerOptions.h:494   - use multi-threading subs: 0
+VioManagerOptions.h:495   - num_pts: 250
+VioManagerOptions.h:496   - fast threshold: 15
+VioManagerOptions.h:497   - grid X by Y: 8 by 6
+VioManagerOptions.h:498   - min px dist: 15
+VioManagerOptions.h:499   - hist method: 1
+VioManagerOptions.h:500   - knn ratio: 0.700
+VioManagerOptions.h:501   - track frequency: 21.0
+opencv_yaml_parse.h:400 the node fi_triangulate_1d of type [b] was not found (not required)...
+opencv_yaml_parse.h:400 the node fi_refine_features of type [b] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_max_runs of type [i] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_init_lamda of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_max_lamda of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_min_dx of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_min_dcost of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_lam_mult of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_min_dist of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_max_dist of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_max_baseline of type [d] was not found (not required)...
+opencv_yaml_parse.h:365 the node fi_max_cond_number of type [d] was not found (not required)...
+FeatureInitializerOptions.h:87 	- triangulate_1d: 0
+FeatureInitializerOptions.h:88 	- refine_features: 1
+FeatureInitializerOptions.h:89 	- max_runs: 5
+FeatureInitializerOptions.h:90 	- init_lamda: 0.001
+FeatureInitializerOptions.h:91 	- max_lamda: 10000000000.000
+FeatureInitializerOptions.h:92 	- min_dx: 0.0000010
+FeatureInitializerOptions.h:93 	- min_dcost: 0.0000010
+FeatureInitializerOptions.h:94 	- lam_mult: 10.000
+FeatureInitializerOptions.h:95 	- min_dist: 0.100
+FeatureInitializerOptions.h:96 	- max_dist: 60.000
+FeatureInitializerOptions.h:97 	- max_baseline: 40.000
+FeatureInitializerOptions.h:98 	- max_cond_number: 10000.000
+VioManagerOptions.h:157 NOISE PARAMETERS:
+NoiseManager.h:62   - gyroscope_noise_density: 0.003500
+NoiseManager.h:63   - accelerometer_noise_density: 0.02000
+NoiseManager.h:64   - gyroscope_random_walk: 0.0002000
+NoiseManager.h:65   - accelerometer_random_walk: 0.002000
+VioManagerOptions.h:177   Updater MSCKF Feats:
+UpdaterOptions.h:45     - chi2_multipler: 1.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:179   Updater SLAM Feats:
+UpdaterOptions.h:45     - chi2_multipler: 1.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:181   Updater ARUCO Tags:
+UpdaterOptions.h:45     - chi2_multipler: 1.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:183   Updater ZUPT:
+UpdaterOptions.h:45     - chi2_multipler: 0.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:353 STATE PARAMETERS:
+VioManagerOptions.h:354   - gravity_mag: 9.8100
+VioManagerOptions.h:355   - gravity: 0.000, 0.000, 9.810
+VioManagerOptions.h:356   - camera masks?: 0
+VioManagerOptions.h:365   - calib_camimu_dt: -0.1059
+VioManagerOptions.h:366 CAMERA PARAMETERS:
+VioManagerOptions.h:381 cam_0_fisheye:1
+cam_0_wh:
+820 x 616
+cam_0_intrinsic(0:3):
+203.583 203.286 415.452 309.098
+cam_0_intrinsic(4:7):
+  -0.0119256  -0.00395131  0.000405187 -0.000302394
+cam_0_extrinsic(0:3):
+   -0.714305   0.00448774 -0.000512894      0.69982
+cam_0_extrinsic(4:6):
+0.0311244  0.102447 0.0307295
+T_C0toI:
+   0.999959 -0.00569336  0.00701394  -0.0307554
+-0.00712909  -0.0204631    0.999765   -0.028404
+-0.00554849   -0.999774  -0.0205028    0.103226
+          0           0           0           1
+
+VioManagerOptions.h:383 IMU PARAMETERS:
+VioManagerOptions.h:391 imu model:kalibr
+Dw (columnwise):1 0 0 1 0 1
+Da (columnwise):1 0 0 1 0 1
+Tg (columnwise):0 0 0 0 0 0 0 0 0
+q_GYROtoI: 0 0 0 1
+q_ACCtoI: 0 0 0 1
+VioManager.cpp:53 =======================================
+VioManager.cpp:54 OPENVINS ON-MANIFOLD EKF IS STARTING
+VioManager.cpp:55 =======================================
+VioManagerOptions.h:110 ESTIMATOR PARAMETERS:
+StateOptions.h:158   - use_fej: 1
+StateOptions.h:159   - integration: 1
+StateOptions.h:160   - calib_cam_extrinsics: 0
+StateOptions.h:161   - calib_cam_intrinsics: 0
+StateOptions.h:162   - calib_cam_timeoffset: 0
+StateOptions.h:163   - calib_imu_intrinsics: 0
+StateOptions.h:164   - calib_imu_g_sensitivity: 0
+StateOptions.h:165   - imu_model: 0
+StateOptions.h:166   - max_clones: 11
+StateOptions.h:167   - max_slam: 50
+StateOptions.h:168   - max_slam_in_update: 25
+StateOptions.h:169   - max_msckf_in_update: 40
+StateOptions.h:170   - max_aruco: 1024
+StateOptions.h:171   - max_cameras: 1
+StateOptions.h:172   - feat_rep_msckf: GLOBAL_3D
+StateOptions.h:173   - feat_rep_slam: ANCHORED_MSCKF_INVERSE_DEPTH
+StateOptions.h:174   - feat_rep_aruco: ANCHORED_MSCKF_INVERSE_DEPTH
+InertialInitializerOptions.h:125 INITIALIZATION SETTINGS:
+InertialInitializerOptions.h:150   - init_window_time: 2.00
+InertialInitializerOptions.h:151   - init_imu_thresh: 0.50
+InertialInitializerOptions.h:152   - init_max_disparity: 0.50
+InertialInitializerOptions.h:153   - init_max_features: 0.50
+InertialInitializerOptions.h:171   - init_dyn_use: 1
+InertialInitializerOptions.h:172   - init_dyn_mle_opt_calib: 0
+InertialInitializerOptions.h:173   - init_dyn_mle_max_iter: 50
+InertialInitializerOptions.h:174   - init_dyn_mle_max_threads: 6
+InertialInitializerOptions.h:175   - init_dyn_mle_max_time: 1.00
+InertialInitializerOptions.h:176   - init_dyn_num_pose: 4
+InertialInitializerOptions.h:177   - init_dyn_min_deg: 2.00
+InertialInitializerOptions.h:178   - init_dyn_inflation_ori: 1.00e+01
+InertialInitializerOptions.h:179   - init_dyn_inflation_vel: 1.00e+02
+InertialInitializerOptions.h:180   - init_dyn_inflation_bg: 1.00e+01
+InertialInitializerOptions.h:181   - init_dyn_inflation_ba: 1.00e+02
+InertialInitializerOptions.h:182   - init_dyn_min_rec_cond: 1.00e-12
+InertialInitializerOptions.h:188   - init_dyn_bias_g: 0.00, 0.00, 0.00
+InertialInitializerOptions.h:189   - init_dyn_bias_a: 0.00, 0.00, 0.00
+InertialInitializerOptions.h:216 NOISE PARAMETERS:
+InertialInitializerOptions.h:224   - gyroscope_noise_density: 0.003500
+InertialInitializerOptions.h:225   - accelerometer_noise_density: 0.02000
+InertialInitializerOptions.h:226   - gyroscope_random_walk: 0.0002000
+InertialInitializerOptions.h:227   - accelerometer_random_walk: 0.002000
+InertialInitializerOptions.h:228   - sigma_pix: 1.00
+InertialInitializerOptions.h:317 STATE PARAMETERS:
+InertialInitializerOptions.h:318   - gravity_mag: 9.8100
+InertialInitializerOptions.h:319   - gravity: 0.000, 0.000, 9.810
+InertialInitializerOptions.h:320   - num_cameras: 1
+InertialInitializerOptions.h:321   - use_stereo: 0
+InertialInitializerOptions.h:322   - downsize cameras: 1
+InertialInitializerOptions.h:329   - calib_camimu_dt: -0.1059
+InertialInitializerOptions.h:344 cam_0_fisheye:1
+cam_0_wh:
+820 x 616
+cam_0_intrinsic(0:3):
+203.583 203.286 415.452 309.098
+cam_0_intrinsic(4:7):
+  -0.0119256  -0.00395131  0.000405187 -0.000302394
+cam_0_extrinsic(0:3):
+   -0.714305   0.00448774 -0.000512894      0.69982
+cam_0_extrinsic(4:6):
+0.0311244  0.102447 0.0307295
+T_C0toI:
+   0.999959 -0.00569336  0.00701394  -0.0307554
+-0.00712909  -0.0204631    0.999765   -0.028404
+-0.00554849   -0.999774  -0.0205028    0.103226
+          0           0           0           1
+
+VioManagerOptions.h:123   - dt_slam_delay: 1.0
+VioManagerOptions.h:124   - zero_velocity_update: 0
+VioManagerOptions.h:125   - zupt_max_velocity: 0.10
+VioManagerOptions.h:126   - zupt_noise_multiplier: 10.00
+VioManagerOptions.h:127   - zupt_max_disparity: 0.5000
+VioManagerOptions.h:128   - zupt_only_at_beginning?: 0
+VioManagerOptions.h:129   - record timing?: 1
+VioManagerOptions.h:130   - record timing filepath: /tmp/traj_timing.txt
+VioManagerOptions.h:157 NOISE PARAMETERS:
+NoiseManager.h:62   - gyroscope_noise_density: 0.003500
+NoiseManager.h:63   - accelerometer_noise_density: 0.02000
+NoiseManager.h:64   - gyroscope_random_walk: 0.0002000
+NoiseManager.h:65   - accelerometer_random_walk: 0.002000
+VioManagerOptions.h:177   Updater MSCKF Feats:
+UpdaterOptions.h:45     - chi2_multipler: 1.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:179   Updater SLAM Feats:
+UpdaterOptions.h:45     - chi2_multipler: 1.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:181   Updater ARUCO Tags:
+UpdaterOptions.h:45     - chi2_multipler: 1.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:183   Updater ZUPT:
+UpdaterOptions.h:45     - chi2_multipler: 0.0
+UpdaterOptions.h:46     - sigma_pix: 1.00
+VioManagerOptions.h:353 STATE PARAMETERS:
+VioManagerOptions.h:354   - gravity_mag: 9.8100
+VioManagerOptions.h:355   - gravity: 0.000, 0.000, 9.810
+VioManagerOptions.h:356   - camera masks?: 0
+VioManagerOptions.h:365   - calib_camimu_dt: -0.1059
+VioManagerOptions.h:366 CAMERA PARAMETERS:
+VioManagerOptions.h:381 cam_0_fisheye:1
+cam_0_wh:
+820 x 616
+cam_0_intrinsic(0:3):
+203.583 203.286 415.452 309.098
+cam_0_intrinsic(4:7):
+  -0.0119256  -0.00395131  0.000405187 -0.000302394
+cam_0_extrinsic(0:3):
+   -0.714305   0.00448774 -0.000512894      0.69982
+cam_0_extrinsic(4:6):
+0.0311244  0.102447 0.0307295
+T_C0toI:
+   0.999959 -0.00569336  0.00701394  -0.0307554
+-0.00712909  -0.0204631    0.999765   -0.028404
+-0.00554849   -0.999774  -0.0205028    0.103226
+          0           0           0           1
+
+VioManagerOptions.h:383 IMU PARAMETERS:
+VioManagerOptions.h:391 imu model:kalibr
+Dw (columnwise):1 0 0 1 0 1
+Da (columnwise):1 0 0 1 0 1
+Tg (columnwise):0 0 0 0 0 0 0 0 0
+q_GYROtoI: 0 0 0 1
+q_ACCtoI: 0 0 0 1
+VioManagerOptions.h:486 FEATURE TRACKING PARAMETERS:
+VioManagerOptions.h:487   - use_stereo: 0
+VioManagerOptions.h:488   - use_klt: 1
+VioManagerOptions.h:489   - use_aruco: 0
+VioManagerOptions.h:490   - downsize aruco: 1
+VioManagerOptions.h:491   - downsize cameras: 1
+VioManagerOptions.h:492   - num opencv threads: 4
+VioManagerOptions.h:493   - use multi-threading pubs: 1
+VioManagerOptions.h:494   - use multi-threading subs: 1
+VioManagerOptions.h:495   - num_pts: 250
+VioManagerOptions.h:496   - fast threshold: 15
+VioManagerOptions.h:497   - grid X by Y: 8 by 6
+VioManagerOptions.h:498   - min px dist: 15
+VioManagerOptions.h:499   - hist method: 1
+VioManagerOptions.h:500   - knn ratio: 0.700
+VioManagerOptions.h:501   - track frequency: 21.0
+FeatureInitializerOptions.h:87 	- triangulate_1d: 0
+FeatureInitializerOptions.h:88 	- refine_features: 1
+FeatureInitializerOptions.h:89 	- max_runs: 5
+FeatureInitializerOptions.h:90 	- init_lamda: 0.001
+FeatureInitializerOptions.h:91 	- max_lamda: 10000000000.000
+FeatureInitializerOptions.h:92 	- min_dx: 0.0000010
+FeatureInitializerOptions.h:93 	- min_dcost: 0.0000010
+FeatureInitializerOptions.h:94 	- lam_mult: 10.000
+FeatureInitializerOptions.h:95 	- min_dist: 0.100
+FeatureInitializerOptions.h:96 	- max_dist: 60.000
+FeatureInitializerOptions.h:97 	- max_baseline: 40.000
+FeatureInitializerOptions.h:98 	- max_cond_number: 10000.000
+ROS1Visualizer.cpp:49 Publishing: /ov_msckf/poseimu
+ROS1Visualizer.cpp:51 Publishing: /ov_msckf/odomimu
+ROS1Visualizer.cpp:53 Publishing: /ov_msckf/pathimu
+ROS1Visualizer.cpp:57 Publishing: /ov_msckf/points_msckf
+ROS1Visualizer.cpp:59 Publishing: /ov_msckf/points_msckf
+ROS1Visualizer.cpp:61 Publishing: /ov_msckf/points_aruco
+ROS1Visualizer.cpp:63 Publishing: /ov_msckf/points_sim
+ROS1Visualizer.cpp:67 Publishing: /ov_msckf/trackhist
+ROS1Visualizer.cpp:71 Publishing: /ov_msckf/posegt
+ROS1Visualizer.cpp:73 Publishing: /ov_msckf/pathgt
+ROS1Visualizer.cpp:161 subscribing to IMU: /imu0
+ROS1Visualizer.cpp:192 subscribing to cam (mono): /cam0/image_raw
+run_subscribe_msckf.cpp:102 done...spinning to ros
+VioManager.cpp:314 [34m[TIME]: 0.0032 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0033 seconds total (298.6 hz, 17.73 ms behind)
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0034 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0034 seconds total (290.5 hz, 11.87 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,0 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0028 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0028 seconds total (354.9 hz, 12.40 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,0 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0042 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0042 seconds total (237.1 hz, 11.74 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,18 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0029 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0029 seconds total (339.2 hz, 11.47 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,18 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0028 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0029 seconds total (350.8 hz, 12.01 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,25 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0013 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (740.2 hz, 11.74 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,25 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0041 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0041 seconds total (242.5 hz, 11.87 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,36 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0023 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0023 seconds total (431.4 hz, 12.01 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,36 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (694.4 hz, 11.34 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,41 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0028 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0028 seconds total (352.2 hz, 11.88 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,46 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0017 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0018 seconds total (560.5 hz, 11.61 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,46 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (706.7 hz, 11.75 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,52 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0011 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0012 seconds total (841.8 hz, 11.88 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,52 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0015 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0016 seconds total (632.1 hz, 12.02 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,52 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0065 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0066 seconds total (152.3 hz, 11.35 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,52 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (697.4 hz, 11.88 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,52 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0019 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0020 seconds total (510.7 hz, 11.62 ms behind)
+[0mInertialInitializer.cpp:123 [33m[init]: not enough feats to compute disp: 0,57 < 15
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0000 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (759.3 hz, 11.35 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.053,5.483 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0011 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0012 seconds total (842.5 hz, 11.89 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.734,4.294 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (778.8 hz, 12.02 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.660,3.860 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0011 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0012 seconds total (862.1 hz, 11.36 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.136,4.080 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0017 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0018 seconds total (559.6 hz, 11.49 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.520,3.698 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (797.4 hz, 12.03 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.045,3.354 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0015 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0015 seconds total (654.9 hz, 11.76 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.033,2.429 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0017 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0018 seconds total (570.1 hz, 11.49 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.857,3.227 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0012 seconds total (819.7 hz, 11.63 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 6.970,3.468 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0017 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0018 seconds total (566.6 hz, 11.76 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 6.122,3.207 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (691.6 hz, 11.50 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.897,2.689 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0011 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0012 seconds total (847.5 hz, 11.63 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.694,2.820 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0032 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0033 seconds total (304.2 hz, 11.37 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.350,3.159 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0011 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0011 seconds total (876.4 hz, 11.50 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.180,4.287 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0010 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0011 seconds total (944.3 hz, 11.24 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.982,3.914 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0001 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0010 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0011 seconds total (908.3 hz, 11.37 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: dispaWARNING: Logging before InitGoogleLogging() is written to STDERR
+E0608 03:20:05.688920   687 covariance_impl.cc:684] Jacobian matrix is rank deficient. Number of columns: 93 rank: 92
+E0608 03:20:05.753382   710 covariance_impl.cc:684] Jacobian matrix is rank deficient. Number of columns: 96 rank: 95
+rity is 5.625,3.868 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 26.5322 deg and |accel| = 9.7137
+DynamicInitializer.cpp:313 [init-d]: system of 98 measurement x 57 states created (17 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 186044.221 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00223 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.047,-0.175,-0.007 and |v| = 0.1817
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 1.396,-9.655,1.033 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 49 iterations | 4 states, 11 feats (11 valid) | 112 param and 129 res | cost 8.3363e+01 => 2.2001e+01
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 5.873281e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1014 [33m[init-d]: covariance recovery failed...
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0197 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0039 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0039 seconds total (253.4 hz, 11.51 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.525,4.046 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 27.0502 deg and |accel| = 9.7066
+DynamicInitializer.cpp:313 [init-d]: system of 94 measurement x 54 states created (16 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 140749.381 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00249 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.045,-0.176,-0.006 and |v| = 0.1815
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 1.398,-9.655,1.034 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 47 iterations | 4 states, 12 feats (12 valid) | 115 param and 133 res | cost 8.0105e+01 => 2.6606e+01
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 9.726001e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1014 [33m[init-d]: covariance recovery failed...
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0132 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0024 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0025 seconds total (407.5 hz, 11.64 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.110,3.748 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 27.3426 deg and |accel| = 9.7084
+DynamicInitializer.cpp:313 [init-d]: system of 94 measurement x 54 states created (16 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 100887.727 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00302 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.046,-0.180,-0.004 and |v| = 0.1854
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 1.395,-9.655,1.036 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 4 states, 11 feats (11 valid) | 112 param and 129 res | cost 8.2758e+01 => 1.7736e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0163 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0025 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0026 seconds total (389.9 hz, 11.37 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.869,2.560 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 27.7101 deg and |accel| = 9.7124
+DynamicInitializer.cpp:313 [init-d]: system of 146 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 49549.073 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01065 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.048,-0.185,0.008 and |v| = 0.1917
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 1.390,-9.655,1.045 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (5 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0154 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0013 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (743.5 hz, 11.51 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.089,2.215 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 27.9866 deg and |accel| = 9.7167
+DynamicInitializer.cpp:313 [init-d]: system of 146 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 52382.340 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01320 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.046,-0.187,0.010 and |v| = 0.1930
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 1.391,-9.654,1.047 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (5 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0156 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0017 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0018 seconds total (559.3 hz, 11.64 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.634,2.344 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 28.3237 deg and |accel| = 9.7207
+DynamicInitializer.cpp:313 [init-d]: system of 146 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 59476.262 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01657 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.042,-0.191,0.014 and |v| = 0.1961
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 1.393,-9.654,1.050 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (4 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0161 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (777.6 hz, 11.38 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.872,2.287 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 14.9883 deg and |accel| = 9.7982
+DynamicInitializer.cpp:313 [init-d]: system of 126 measurement x 66 states created (20 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 103661.217 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00560 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.030,-0.002,0.079 and |v| = 0.0844
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.486,-9.755,0.914 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (1 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0107 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0012 seconds total (809.7 hz, 11.51 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.633,4.115 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 15.3371 deg and |accel| = 9.7979
+DynamicInitializer.cpp:313 [init-d]: system of 124 measurement x 66 states created (20 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 261455.765 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00284 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.013,0.009,0.057 and |v| = 0.0592
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.479,-9.757,0.896 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (1 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0109 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0026 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0026 seconds total (382.0 hz, 11.65 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.653,6.173 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 15.8276 deg and |accel| = 9.7888
+DynamicInitializer.cpp:313 [init-d]: system of 124 measurement x 66 states created (20 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 357266.151 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00294 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.009,0.011,0.058 and |v| = 0.0592
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.474,-9.757,0.901 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (1 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0113 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (697.8 hz, 11.38 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.582,8.999 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 16.3815 deg and |accel| = 9.7976
+DynamicInitializer.cpp:313 [init-d]: system of 118 measurement x 66 states created (20 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 609263.246 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00304 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.006,0.011,0.061 and |v| = 0.0627
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.468,-9.756,0.910 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (1 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0116 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0015 seconds total (672.0 hz, 11.51 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.051,10.989 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 16.6948 deg and |accel| = 9.8057
+DynamicInitializer.cpp:313 [init-d]: system of 158 measurement x 78 states created (24 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 67848.933 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00740 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.004,0.007,0.044 and |v| = 0.0445
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.482,-9.758,0.885 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (3 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0157 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0023 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0023 seconds total (430.5 hz, 11.65 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.432,15.884 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 17.6994 deg and |accel| = 9.8110
+DynamicInitializer.cpp:313 [init-d]: system of 154 measurement x 75 states created (23 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 78658.871 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00784 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.003,0.007,0.042 and |v| = 0.0431
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.483,-9.758,0.885 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (2 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0160 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0033 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0033 seconds total (301.6 hz, 11.38 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.821,20.019 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 19.6100 deg and |accel| = 9.7999
+DynamicInitializer.cpp:313 [init-d]: system of 148 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 81389.957 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00768 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.003,0.008,0.044 and |v| = 0.0451
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.486,-9.758,0.885 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (3 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0157 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0039 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0040 seconds total (250.9 hz, 11.52 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.192,24.653 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 14.8534 deg and |accel| = 9.7547
+DynamicInitializer.cpp:313 [init-d]: system of 128 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 886406.110 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00222 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.015,-0.047,0.033 and |v| = 0.0592
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.527,-9.750,0.943 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (6 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0115 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0015 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0015 seconds total (648.1 hz, 11.65 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.966,28.763 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 16.2143 deg and |accel| = 9.7544
+DynamicInitializer.cpp:313 [init-d]: system of 126 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 755173.931 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00252 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.019,-0.048,0.035 and |v| = 0.0618
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.519,-9.750,0.947 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 4 states, 12 feats (12 valid) | 115 param and 141 res | cost 1.1664e+02 => 3.0948e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0154 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0024 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0024 seconds total (415.3 hz, 11.39 ms behind)
+[0mInertialInitializer.cpp:128 [33m[initE0608 03:20:06.751379   984 covariance_impl.cc:684] Jacobian matrix is rank deficient. Number of columns: 84 rank: 82
+E0608 03:20:06.823141  1006 covariance_impl.cc:684] Jacobian matrix is rank deficient. Number of columns: 111 rank: 109
+]: disparity is 3.807,28.932 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 17.6662 deg and |accel| = 9.7466
+DynamicInitializer.cpp:313 [init-d]: system of 116 measurement x 69 states created (21 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 1337966.808 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00195 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.015,-0.047,0.033 and |v| = 0.0595
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.525,-9.751,0.942 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 4 states, 8 feats (8 valid) | 103 param and 113 res | cost 6.8651e+01 => 2.5617e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0135 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0015 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0015 seconds total (649.8 hz, 11.52 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.016,30.104 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 18.5947 deg and |accel| = 9.7547
+DynamicInitializer.cpp:313 [init-d]: system of 116 measurement x 69 states created (21 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 1162250.275 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00213 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.017,-0.048,0.033 and |v| = 0.0603
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.521,-9.751,0.941 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 47 iterations | 4 states, 8 feats (8 valid) | 103 param and 113 res | cost 6.6581e+01 => 2.2532e+01
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 9.682375e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1014 [33m[init-d]: covariance recovery failed...
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0136 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0015 seconds total (682.1 hz, 11.66 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 4.041,25.788 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 20.8254 deg and |accel| = 9.7517
+DynamicInitializer.cpp:313 [init-d]: system of 146 measurement x 78 states created (24 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 322702.491 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00380 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.029,-0.051,0.036 and |v| = 0.0692
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.512,-9.751,0.941 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 44 iterations | 5 states, 12 feats (12 valid) | 131 param and 158 res | cost 1.1803e+02 => 4.9683e+01
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 3.982696e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1014 [33m[init-d]: covariance recovery failed...
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0175 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0016 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0017 seconds total (594.9 hz, 11.39 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.864,26.571 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.7355 deg and |accel| = 9.7550
+DynamicInitializer.cpp:313 [init-d]: system of 146 measurement x 78 states created (24 features, mono)
+DynamicInE0608 03:20:06.888501  1027 covariance_impl.cc:684] Jacobian matrix is rank deficient. Number of columns: 111 rank: 108
+itializer.cpp:413 [init-d]: CM cond = 302092.243 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00401 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.039,-0.052,0.042 and |v| = 0.0772
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.488,-9.751,0.953 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 45 iterations | 5 states, 12 feats (12 valid) | 131 param and 158 res | cost 1.4135e+02 => 5.4612e+01
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 2.421862e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1014 [33m[init-d]: covariance recovery failed...
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0188 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0014 seconds total (694.0 hz, 11.53 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.444,27.348 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 22.2188 deg and |accel| = 9.7690
+DynamicInitializer.cpp:313 [init-d]: system of 146 measurement x 78 states created (24 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 278794.499 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00395 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.047,-0.050,0.047 and |v| = 0.0836
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.470,-9.751,0.966 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (6 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0152 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0016 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0016 seconds total (618.8 hz, 11.26 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.279,22.059 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 22.0878 deg and |accel| = 9.7904
+DynamicInitializer.cpp:313 [init-d]: system of 150 measurement x 78 states created (24 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 62692.456 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00783 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.062,-0.026,0.045 and |v| = 0.0812
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.537,-9.750,0.939 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (6 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0159 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0015 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0016 seconds total (622.3 hz, 11.79 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 2.416,21.393 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.8771 deg and |accel| = 9.7771
+DynamicInitializer.cpp:313 [init-d]: system of 136 measurement x 69 states created (21 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 47087.741 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01466 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.036,-0.021,0.010 and |v| = 0.0431
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.673,-9.747,0.879 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 5 states, 13 feats (13 valid) | 134 param and 168 res | cost 1.5642e+02 => 3.5936e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0215 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0012 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (781.3 hz, 11.53 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 3.701,21.086 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.7455 deg and |accel| = 9.7736
+DynamicInitializer.cpp:313 [init-d]: system of 140 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 34930.995 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.05272 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.010,-0.029,-0.005 and |v| = 0.0307
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.727,-9.742,0.891 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 5 states, 11 feats (11 valid) | 128 param and 158 res | cost 1.1583e+02 => 1.7506e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0195 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0014 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0015 seconds total (678.0 hz, 11.26 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 5.514,20.028 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.5275 deg and |accel| = 9.7732
+DynamicInitializer.cpp:313 [init-d]: system of 136 measurement x 72 states created (22 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 44848.397 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01410 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.006,-0.051,0.016 and |v| = 0.0541
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.773,-9.733,0.952 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 5 states, 12 feats (12 valid) | 131 param and 164 res | cost 1.3081e+02 => 2.8826e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0193 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0017 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0018 seconds total (570.1 hz, 11.40 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 9.262,19.122 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.3533 deg and |accel| = 9.7776
+DynamicInitializer.cpp:313 [init-d]: system of 98 measurement x 63 states created (19 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 31166.630 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01661 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.014,-0.080,-0.014 and |v| = 0.0829
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.802,-9.734,0.920 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (1 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0129 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0024 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0024 seconds total (410.2 hz, 11.53 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 11.307,16.725 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.1081 deg and |accel| = 9.7665
+DynamicInitializer.cpp:313 [init-d]: system of 98 measurement x 63 states created (19 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 31929.818 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01554 (E0608 03:20:07.420472  1182 covariance_impl.cc:684] Jacobian matrix is rank deficient. Number of columns: 84 rank: 83
+cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.028,-0.094,-0.030 and |v| = 0.1026
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.848,-9.737,0.839 and |g| = 9.8100
+DynamicInitializer.cpp:547 [33m[init-d]: not enough features for our mle (0 < 8)!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0132 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0013 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0013 seconds total (746.3 hz, 11.67 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 14.309,12.357 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.2337 deg and |accel| = 9.7825
+DynamicInitializer.cpp:313 [init-d]: system of 98 measurement x 63 states created (19 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 35512.801 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.01206 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was 0.012,-0.076,-0.016 and |v| = 0.0784
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.836,-9.738,0.843 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 19 iterations | 4 states, 8 feats (8 valid) | 103 param and 113 res | cost 5.1714e+01 => 6.4388e+00
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 8.145714e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1014 [33m[init-d]: covariance recovery failed...
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0148 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0029 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0030 seconds total (338.5 hz, 11.40 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 20.101,6.919 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.3423 deg and |accel| = 9.7846
+DynamicInitializer.cpp:313 [init-d]: system of 168 measurement x 102 states created (32 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 106328.566 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00824 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.005,-0.070,0.014 and |v| = 0.0717
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.799,-9.740,0.856 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 51 iterations | 5 states, 11 feats (11 valid) | 128 param and 156 res | cost 9.0194e+01 => 3.1949e+01
+DynamicInitializer.cpp:903 [33m[init-d]: opt failed: Maximum number of iterations reached. Number of iterations: 50.!
+[0mVioManagerHelper.cpp:170 [33m[init]: failed initialization in 0.0202 seconds
+[0mVioManager.cpp:314 [34m[TIME]: 0.0021 seconds for tracking
+[0mROS1Visualizer.cpp:483 [34m[TIME]: 0.0022 seconds total (464.0 hz, 11.54 ms behind)
+[0mInertialInitializer.cpp:128 [33m[init]: disparity is 23.851,4.915 (0.50 thresh)
+[0mInertialInitializer.cpp:143 [32m[init]: USING DYNAMIC INITIALIZER METHOD!
+[0mDynamicInitializer.cpp:194 [init-d]: |theta_I| = 21.2150 deg and |accel| = 9.7641
+DynamicInitializer.cpp:313 [init-d]: system of 154 measurement x 93 states created (29 features, mono)
+DynamicInitializer.cpp:413 [init-d]: CM cond = 101927.889 | rank = 6 of 6 (1.332e-15 thresh)
+DynamicInitializer.cpp:457 [init-d]: smallest real eigenvalue = 0.00590 (cost of 0.000000)
+DynamicInitializer.cpp:470 [init-d]: velocity in I0 was -0.014,-0.077,0.022 and |v| = 0.0808
+DynamicInitializer.cpp:480 [init-d]: gravity in I0 was 0.768,-9.742,0.863 and |g| = 9.8100
+DynamicInitializer.cpp:895 [init-d]: 37 iterations | 5 states, 13 feats (13 valid) | 134 param and 170 res | cost 1.1007e+02 => 2.9086e+01
+DynamicInitializer.cpp:907 [init-d]: Function tolerance reached. |cost_change|/cost: 9.292155e-06 <= 1.000000e-05
+DynamicInitializer.cpp:1086 [init-d]: vel priors = 0.301, 0.366, 0.169
+DynamicInitializer.cpp:1087 [init-d]:run_subscribe_msckf: /home/zzzjt/projects/openvins_ws/src/open_vins/ov_msckf/src/state/Propagator.cpp:101: void ov_msckf::Propagator::propagate_and_clone(std::shared_ptr<ov_msckf::State>, double): Assertion `std::abs((time1 - time0) - dt_summed) < 1e-4' failed.
+[31m================================================================================REQUIRED process [ov_msckf-2] has died!
+process has died [pid 88, exit code -6, cmd /home/zzzjt/projects/openvins_ws/devel/lib/ov_msckf/run_subscribe_msckf __name:=ov_msckf __log:=/root/.ros/log/efc8e05a-62e8-11f1-98da-f283c8b98599/ov_msckf-2.log].
+log file: /root/.ros/log/efc8e05a-62e8-11f1-98da-f283c8b98599/ov_msckf-2*.log
+Initiating shutdown!
+================================================================================[0m
+... logging to /root/.ros/log/efc8e05a-62e8-11f1-98da-f283c8b98599/roslaunch-16a35dbe1ac9-1.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/zzzjt/projects/openvins_ws/src/open_vins/ov_msckf/launch/subscribe.launch
+[1mstarted roslaunch server http://16a35dbe1ac9:39943/[0m
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /ov_msckf/
+
+PARAMETERS
+ * /ov_msckf/config_path: /home/zzzjt/proje...
+ * /ov_msckf/max_cameras: 1
+ * /ov_msckf/record_timing_filepath: /tmp/traj_timing.txt
+ * /ov_msckf/record_timing_information: True
+ * /ov_msckf/use_stereo: False
+ * /ov_msckf/verbosity: DEBUG
+ * /recorder_estimate/output: /home/zzzjt/proje...
+ * /recorder_estimate/topic: /ov_msckf/poseimu
+ * /recorder_estimate/topic_type: PoseWithCovarianc...
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+
+NODES
+  /
+    ov_msckf (ov_msckf/run_subscribe_msckf)
+    recorder_estimate (ov_eval/pose_to_file)
+    rosbag (rosbag/play)
+
+auto-starting new master
+[1mprocess[master]: started with pid [70][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/zzzjt/projects/openvins_ws/src/open_vins/ov_msckf/launch/subscribe.launch http://localhost:11311
+[1msetting /run_id to efc8e05a-62e8-11f1-98da-f283c8b98599[0m
+[1mprocess[rosout-1]: started with pid [80][0m
+started core service [/rosout]
+[1mprocess[ov_msckf-2]: started with pid [88][0m
+[1mprocess[rosbag-3]: started with pid [89][0m
+[1mprocess[recorder_estimate-4]: started with pid [90][0m
+[recorder_estimate-4] killing on exit
+[ov_msckf-2] killing on exit
+[rosbag-3] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

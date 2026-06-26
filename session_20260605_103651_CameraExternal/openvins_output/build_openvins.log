@@ -1,0 +1,250 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/zzzjt/projects/openvins_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/zzzjt/projects/openvins_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 5 packages in topological order:
+-- ~~  - ov_data
+-- ~~  - ov_core
+-- ~~  - ov_eval
+-- ~~  - ov_init
+-- ~~  - ov_msckf
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'ov_data'
+-- ==> add_subdirectory(open_vins/ov_data)
+-- ROS *1* version found
+-- +++ processing catkin package: 'ov_core'
+-- ==> add_subdirectory(open_vins/ov_core)
+-- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found version "1.71.0") found components: system filesystem thread date_time 
+-- OPENCV: 4.2.0 | BOOST: 1.71.0
+-- PYTHON VERSION: 3.8.10
+-- PYTHON INCLUDE: /usr/include/python3.8
+-- PYTHON LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- ROS *1* version found, building ROS1.cmake
+-- +++ processing catkin package: 'ov_eval'
+-- ==> add_subdirectory(open_vins/ov_eval)
+-- PYTHON VERSION: 3.8.10
+-- PYTHON INCLUDE: /usr/include/python3.8
+-- PYTHON LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- ROS *1* version found, building ROS1.cmake
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Installing devel-space wrapper /home/zzzjt/projects/openvins_ws/src/open_vins/ov_eval/python/pid_ros.py to /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval
+-- Installing devel-space wrapper /home/zzzjt/projects/openvins_ws/src/open_vins/ov_eval/python/pid_sys.py to /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval
+-- +++ processing catkin package: 'ov_init'
+-- ==> add_subdirectory(open_vins/ov_init)
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+-- Detected gflags version: 2.2.2
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+-- OPENCV: 4.2.0 | BOOST: 1.71.0 | CERES: 1.14.0
+-- PYTHON VERSION: 3.8.10
+-- PYTHON INCLUDE: /usr/include/python3.8
+-- PYTHON LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+-- ROS *1* version found, building ROS1.cmake
+-- +++ processing catkin package: 'ov_msckf'
+-- ==> add_subdirectory(open_vins/ov_msckf)
+-- Found installed version of Eigen: /usr/lib/cmake/eigen3
+-- Found required Ceres dependency: Eigen version 3.3.7 in /usr/include/eigen3
+-- Found required Ceres dependency: glog
+-- Found installed version of gflags: /usr/lib/x86_64-linux-gnu/cmake/gflags
+-- Detected gflags version: 2.2.2
+-- Found required Ceres dependency: gflags
+-- Found Ceres version: 1.14.0 installed in: /usr with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, CXSparse, SchurSpecializations, OpenMP, Multithreading]
+-- OPENCV: 4.2.0 | BOOST: 1.71.0 | CERES: 1.14.0
+-- ROS *1* version found, building ROS1.cmake
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zzzjt/projects/openvins_ws/build
+Scanning dependencies of target ov_core_lib
+[  1%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/dummy.cpp.o
+[  2%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/cpi/CpiV1.cpp.o
+[  3%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/cpi/CpiV2.cpp.o
+[  4%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/sim/BsplineSE3.cpp.o
+[  5%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/track/TrackBase.cpp.o
+[  6%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/track/TrackAruco.cpp.o
+[  7%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/track/TrackDescriptor.cpp.o
+[  8%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/track/TrackKLT.cpp.o
+[  9%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/track/TrackSIM.cpp.o
+[ 10%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/types/Landmark.cpp.o
+[ 11%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/feat/Feature.cpp.o
+[ 13%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/feat/FeatureDatabase.cpp.o
+[ 14%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/feat/FeatureInitializer.cpp.o
+[ 15%] Building CXX object open_vins/ov_core/CMakeFiles/ov_core_lib.dir/src/utils/print.cpp.o
+[ 16%] Linking CXX shared library /home/zzzjt/projects/openvins_ws/devel/lib/libov_core_lib.so
+[ 16%] Built target ov_core_lib
+Scanning dependencies of target test_profile
+Scanning dependencies of target test_tracking
+[ 17%] Building CXX object open_vins/ov_core/CMakeFiles/test_profile.dir/src/test_profile.cpp.o
+[ 18%] Building CXX object open_vins/ov_core/CMakeFiles/test_tracking.dir/src/test_tracking.cpp.o
+[ 19%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_core/test_tracking
+[ 19%] Built target test_tracking
+Scanning dependencies of target test_webcam
+[ 20%] Building CXX object open_vins/ov_core/CMakeFiles/test_webcam.dir/src/test_webcam.cpp.o
+[ 21%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_core/test_webcam
+[ 21%] Built target test_webcam
+Scanning dependencies of target ov_eval_lib
+[ 22%] Building CXX object open_vins/ov_eval/CMakeFiles/ov_eval_lib.dir/src/dummy.cpp.o
+[ 23%] Building CXX object open_vins/ov_eval/CMakeFiles/ov_eval_lib.dir/src/alignment/AlignTrajectory.cpp.o
+[ 25%] Building CXX object open_vins/ov_eval/CMakeFiles/ov_eval_lib.dir/src/alignment/AlignUtils.cpp.o
+[ 26%] Building CXX object open_vins/ov_eval/CMakeFiles/ov_eval_lib.dir/src/calc/ResultTrajectory.cpp.o
+[ 27%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_core/test_profile
+[ 27%] Built target test_profile
+Scanning dependencies of target ov_init_lib
+[ 28%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/dummy.cpp.o
+[ 29%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/ceres/Factor_GenericPrior.cpp.o
+[ 30%] Building CXX object open_vins/ov_eval/CMakeFiles/ov_eval_lib.dir/src/calc/ResultSimulation.cpp.o
+[ 31%] Building CXX object open_vins/ov_eval/CMakeFiles/ov_eval_lib.dir/src/utils/Loader.cpp.o
+[ 32%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/ceres/Factor_ImageReprojCalib.cpp.o
+[ 33%] Linking CXX shared library /home/zzzjt/projects/openvins_ws/devel/lib/libov_eval_lib.so
+[ 33%] Built target ov_eval_lib
+[ 34%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/ceres/Factor_ImuCPIv1.cpp.o
+[ 35%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/ceres/State_JPLQuatLocal.cpp.o
+[ 36%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/init/InertialInitializer.cpp.o
+[ 38%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/dynamic/DynamicInitializer.cpp.o
+[ 39%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/static/StaticInitializer.cpp.o
+[ 40%] Building CXX object open_vins/ov_init/CMakeFiles/ov_init_lib.dir/src/sim/SimulatorInit.cpp.o
+Scanning dependencies of target pose_to_file
+[ 41%] Building CXX object open_vins/ov_eval/CMakeFiles/pose_to_file.dir/src/pose_to_file.cpp.o
+[ 42%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/pose_to_file
+[ 42%] Built target pose_to_file
+Scanning dependencies of target timing_percentages
+[ 43%] Building CXX object open_vins/ov_eval/CMakeFiles/timing_percentages.dir/src/timing_percentages.cpp.o
+[ 44%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/timing_percentages
+[ 44%] Built target timing_percentages
+Scanning dependencies of target plot_trajectories
+[ 45%] Building CXX object open_vins/ov_eval/CMakeFiles/plot_trajectories.dir/src/plot_trajectories.cpp.o
+[ 46%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/plot_trajectories
+[ 46%] Built target plot_trajectories
+Scanning dependencies of target timing_histogram
+[ 47%] Building CXX object open_vins/ov_eval/CMakeFiles/timing_histogram.dir/src/timing_histogram.cpp.o
+[ 48%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/timing_histogram
+[ 48%] Built target timing_histogram
+Scanning dependencies of target live_align_trajectory
+[ 50%] Building CXX object open_vins/ov_eval/CMakeFiles/live_align_trajectory.dir/src/live_align_trajectory.cpp.o
+[ 51%] Linking CXX shared library /home/zzzjt/projects/openvins_ws/devel/lib/libov_init_lib.so
+[ 51%] Built target ov_init_lib
+Scanning dependencies of target format_converter
+[ 52%] Building CXX object open_vins/ov_eval/CMakeFiles/format_converter.dir/src/format_converter.cpp.o
+[ 53%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/format_converter
+[ 53%] Built target format_converter
+Scanning dependencies of target timing_comparison
+[ 54%] Building CXX object open_vins/ov_eval/CMakeFiles/timing_comparison.dir/src/timing_comparison.cpp.o
+[ 55%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/live_align_trajectory
+[ 55%] Built target live_align_trajectory
+Scanning dependencies of target error_dataset
+[ 56%] Building CXX object open_vins/ov_eval/CMakeFiles/error_dataset.dir/src/error_dataset.cpp.o
+[ 57%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/timing_comparison
+[ 57%] Built target timing_comparison
+Scanning dependencies of target error_comparison
+[ 58%] Building CXX object open_vins/ov_eval/CMakeFiles/error_comparison.dir/src/error_comparison.cpp.o
+[ 59%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/error_dataset
+[ 59%] Built target error_dataset
+Scanning dependencies of target error_simulation
+[ 60%] Building CXX object open_vins/ov_eval/CMakeFiles/error_simulation.dir/src/error_simulation.cpp.o
+[ 61%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/error_comparison
+[ 61%] Built target error_comparison
+Scanning dependencies of target timing_flamegraph
+[ 63%] Building CXX object open_vins/ov_eval/CMakeFiles/timing_flamegraph.dir/src/timing_flamegraph.cpp.o
+[ 64%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/error_simulation
+[ 64%] Built target error_simulation
+Scanning dependencies of target error_singlerun
+[ 65%] Building CXX object open_vins/ov_eval/CMakeFiles/error_singlerun.dir/src/error_singlerun.cpp.o
+[ 66%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/timing_flamegraph
+[ 66%] Built target timing_flamegraph
+Scanning dependencies of target test_dynamic_mle
+[ 67%] Building CXX object open_vins/ov_init/CMakeFiles/test_dynamic_mle.dir/src/test_dynamic_mle.cpp.o
+[ 68%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_eval/error_singlerun
+[ 68%] Built target error_singlerun
+Scanning dependencies of target test_dynamic_init
+[ 69%] Building CXX object open_vins/ov_init/CMakeFiles/test_dynamic_init.dir/src/test_dynamic_init.cpp.o
+[ 70%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_init/test_dynamic_mle
+[ 70%] Built target test_dynamic_mle
+Scanning dependencies of target test_simulation
+[ 71%] Building CXX object open_vins/ov_init/CMakeFiles/test_simulation.dir/src/test_simulation.cpp.o
+[ 72%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_init/test_dynamic_init
+[ 72%] Built target test_dynamic_init
+Scanning dependencies of target ov_msckf_lib
+[ 73%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/dummy.cpp.o
+[ 75%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/sim/Simulator.cpp.o
+[ 76%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_init/test_simulation
+[ 76%] Built target test_simulation
+[ 77%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/state/State.cpp.o
+[ 78%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/state/StateHelper.cpp.o
+[ 79%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/state/Propagator.cpp.o
+[ 80%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/core/VioManager.cpp.o
+[ 81%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/core/VioManagerHelper.cpp.o
+[ 82%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/update/UpdaterHelper.cpp.o
+[ 83%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/update/UpdaterMSCKF.cpp.o
+[ 84%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/update/UpdaterSLAM.cpp.o
+[ 85%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/update/UpdaterZeroVelocity.cpp.o
+[ 86%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/ros/ROS1Visualizer.cpp.o
+[ 88%] Building CXX object open_vins/ov_msckf/CMakeFiles/ov_msckf_lib.dir/src/ros/ROSVisualizerHelper.cpp.o
+[ 89%] Linking CXX shared library /home/zzzjt/projects/openvins_ws/devel/lib/libov_msckf_lib.so
+[ 89%] Built target ov_msckf_lib
+Scanning dependencies of target run_subscribe_msckf
+Scanning dependencies of target run_simulation
+[ 91%] Building CXX object open_vins/ov_msckf/CMakeFiles/run_subscribe_msckf.dir/src/run_subscribe_msckf.cpp.o
+[ 91%] Building CXX object open_vins/ov_msckf/CMakeFiles/run_simulation.dir/src/run_simulation.cpp.o
+[ 92%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_msckf/run_subscribe_msckf
+[ 92%] Built target run_subscribe_msckf
+Scanning dependencies of target ros1_serial_msckf
+[ 93%] Building CXX object open_vins/ov_msckf/CMakeFiles/ros1_serial_msckf.dir/src/ros1_serial_msckf.cpp.o
+[ 94%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_msckf/run_simulation
+[ 94%] Built target run_simulation
+Scanning dependencies of target test_sim_repeat
+[ 95%] Building CXX object open_vins/ov_msckf/CMakeFiles/test_sim_repeat.dir/src/test_sim_repeat.cpp.o
+[ 96%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_msckf/test_sim_repeat
+[ 96%] Built target test_sim_repeat
+Scanning dependencies of target test_sim_meas
+[ 97%] Building CXX object open_vins/ov_msckf/CMakeFiles/test_sim_meas.dir/src/test_sim_meas.cpp.o
+[ 98%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_msckf/ros1_serial_msckf
+[ 98%] Built target ros1_serial_msckf
+[100%] Linking CXX executable /home/zzzjt/projects/openvins_ws/devel/lib/ov_msckf/test_sim_meas
+[100%] Built target test_sim_meas
+Base path: /home/zzzjt/projects/openvins_ws
+Source space: /home/zzzjt/projects/openvins_ws/src
+Build space: /home/zzzjt/projects/openvins_ws/build
+Devel space: /home/zzzjt/projects/openvins_ws/devel
+Install space: /home/zzzjt/projects/openvins_ws/install
+Creating symlink "/home/zzzjt/projects/openvins_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/zzzjt/projects/openvins_ws/src -DCATKIN_DEVEL_PREFIX=/home/zzzjt/projects/openvins_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zzzjt/projects/openvins_ws/install -G Unix Makefiles" in "/home/zzzjt/projects/openvins_ws/build"
+####
+####
+#### Running command: "make -j2" in "/home/zzzjt/projects/openvins_ws/build"
+####
