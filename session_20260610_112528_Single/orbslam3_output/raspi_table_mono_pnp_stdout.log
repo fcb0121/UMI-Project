@@ -1,0 +1,4472 @@
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular
+Loading settings from /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_imx219_mono_inertial_noisy_820x616.yaml
+	-Loaded camera 1
+	-Loaded image info
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Kannala-Brandt): [ 203.583 203.286 415.452 309.098 -0.0119256 -0.00395131 0.000405187 -0.000302394 ]
+	-Original image size: [ 820 , 616 ]
+	-Current image size: [ 820 , 616 ]
+	-Sequence FPS: 30
+	-Features per image: 1500
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 15
+	-Min FAST threshold: 5
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+There are 1 cameras in the atlas
+Camera 0 is fisheye
+Discard points further than 20 m from current camera
+Video opened using backend FFMPEG
+There are 2195 frames in total
+video FPS 30
+IMU samples 18292
+Frame timestamps 2195 first_abs=1.78106e+09 first_rel=0 last_rel=73.1197
+IMU first_rel=0.0604475 last_rel=73.2214
+line 1873 keyframes 0MapPoints0
+frame=0 t=0 imu_batch=0 tracking_state=1 lost_run=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:0; Map init KF:0
+New Map created with 307 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=0 frame=0 ts=0
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7502
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=1 frame=15 ts=0.499904
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7477
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=2 frame=17 ts=0.56656
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7480
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=3 frame=19 ts=0.633213
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7432
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=4 frame=21 ts=0.699868
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7433
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=5 frame=25 ts=0.833175
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7465
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=6 frame=30 ts=0.999817
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7423
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mnMatchesInliers<30 = 25
+Fail to track local map!
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=100 t=3.33271 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 15
+mnInitialFrameId = 0
+130 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:7; Map init KF:0
+New Map created with 225 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=7 frame=130 ts=4.33252
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7452
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=8 frame=186 ts=6.19884
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7442
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=9 frame=188 ts=6.26549
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=10 frame=191 ts=6.36547
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1509
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mnMatchesInliers<30 = 14
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=200 t=6.66543 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 186
+mnInitialFrameId = 129
+284 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+frame=300 t=9.99813 imu_batch=0 tracking_state=1 lost_run=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:11; Map init KF:7
+New Map created with 264 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=11 frame=284 ts=9.4649
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7494
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=12 frame=306 ts=10.1981
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7472
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=13 frame=310 ts=10.3314
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 24
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=400 t=13.3308 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 306
+mnInitialFrameId = 283
+403 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:14; Map init KF:11
+New Map created with 186 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=14 frame=403 ts=13.4308
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7474
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=15 frame=406 ts=13.5308
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7490
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 26
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=500 t=16.6636 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 406
+mnInitialFrameId = 402
+502 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:16; Map init KF:14
+New Map created with 192 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=16 frame=502 ts=16.7302
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7419
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=17 frame=507 ts=16.8968
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7463
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=18 frame=511 ts=17.0301
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 22
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=600 t=19.9963 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 507
+mnInitialFrameId = 501
+604 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:19; Map init KF:16
+New Map created with 312 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=19 frame=604 ts=20.1296
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7481
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=20 frame=610 ts=20.3295
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7482
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=21 frame=614 ts=20.4628
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=22 frame=615 ts=20.4962
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1509
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=23 frame=617 ts=20.5628
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1509
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=24 frame=619 ts=20.6295
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=25 frame=621 ts=20.6961
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 23
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=700 t=23.329 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 610
+mnInitialFrameId = 603
+714 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:26; Map init KF:19
+New Map created with 228 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=26 frame=714 ts=23.7956
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7500
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=27 frame=752 ts=25.062
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mnMatchesInliers<30 = 19
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=800 t=26.6617 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 752
+mnInitialFrameId = 713
+847 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:28; Map init KF:26
+New Map created with 165 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=28 frame=847 ts=28.2281
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7434
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 21
+Fail to track local map!
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=29 frame=859 ts=28.628
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7415
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+Fail to track local map!
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=900 t=29.9944 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 859
+mnInitialFrameId = 846
+952 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:30; Map init KF:28
+New Map created with 216 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=30 frame=952 ts=31.7274
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7443
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=31 frame=960 ts=31.994
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7461
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=32 frame=964 ts=32.1273
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=33 frame=966 ts=32.194
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1509
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 25
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1000 t=33.3271 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 960
+mnInitialFrameId = 951
+1059 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:34; Map init KF:30
+New Map created with 193 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=34 frame=1059 ts=35.2934
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7501
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=35 frame=1063 ts=35.4267
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7494
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=36 frame=1067 ts=35.5601
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=37 frame=1069 ts=35.6267
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=38 frame=1070 ts=35.66
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 22
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1100 t=36.6598 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1063
+mnInitialFrameId = 1058
+1163 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:39; Map init KF:34
+New Map created with 334 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=39 frame=1163 ts=38.7594
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7494
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=40 frame=1165 ts=38.8261
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7471
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=41 frame=1169 ts=38.9594
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 14
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1200 t=39.9925 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1165
+mnInitialFrameId = 1162
+1262 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:42; Map init KF:39
+New Map created with 308 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=42 frame=1262 ts=42.0588
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7452
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=43 frame=1280 ts=42.6587
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7443
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=44 frame=1285 ts=42.8253
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1509
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=45 frame=1287 ts=42.892
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=46 frame=1289 ts=42.9586
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=47 frame=1291 ts=43.0253
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=48 frame=1293 ts=43.092
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mnMatchesInliers<30 = 20
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1300 t=43.3252 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1280
+mnInitialFrameId = 1261
+1387 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:49; Map init KF:42
+New Map created with 174 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+frame=1400 t=46.6579 imu_batch=0 tracking_state=2 lost_run=0
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=49 frame=1387 ts=46.2247
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7479
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=50 frame=1400 ts=46.6579
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7488
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=51 frame=1404 ts=46.7913
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1510
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=52 frame=1406 ts=46.8579
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=53 frame=1408 ts=46.9246
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=54 frame=1410 ts=46.9912
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=55 frame=1412 ts=47.0579
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1510
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=56 frame=1414 ts=47.1245
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=57 frame=1416 ts=47.1912
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=58 frame=1418 ts=47.2578
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1511
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=59 frame=1420 ts=47.3245
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=60 frame=1422 ts=47.3912
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=61 frame=1424 ts=47.4578
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=62 frame=1426 ts=47.5245
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1502
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=63 frame=1428 ts=47.5911
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=64 frame=1431 ts=47.6911
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mnMatchesInliers<30 = 24
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1500 t=49.9907 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Creation of new map with id: 1
+Stored map with ID: 0
+Creation of new map with last KF id: 65
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:65; Map init KF:65
+New Map created with 256 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=65 frame=1526 ts=50.8572
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7476
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=66 frame=1530 ts=50.9905
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7489
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=67 frame=1534 ts=51.1238
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mnMatchesInliers<30 = 23
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1600 t=53.3234 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1400
+mnInitialFrameId = 1526
+150 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:68; Map init KF:65
+New Map created with 389 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=68 frame=1627 ts=54.2232
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7480
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=69 frame=1632 ts=54.3898
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7476
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=70 frame=1636 ts=54.5231
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1503
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=71 frame=1637 ts=54.5565
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1508
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=72 frame=1639 ts=54.6231
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1507
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=73 frame=1641 ts=54.6898
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=74 frame=1643 ts=54.7564
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=75 frame=1645 ts=54.8231
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=76 frame=1647 ts=54.8897
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 19
+Fail to track local map!
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1700 t=56.6561 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1400
+mnInitialFrameId = 1626
+163 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:77; Map init KF:68
+New Map created with 265 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=77 frame=1740 ts=57.9892
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7338
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=78 frame=1748 ts=58.2558
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7373
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=79 frame=1752 ts=58.3891
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1506
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=80 frame=1753 ts=58.4224
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=81 frame=1755 ts=58.4891
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1504
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=82 frame=1757 ts=58.5557
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1513
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 29
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1800 t=59.9888 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1400
+mnInitialFrameId = 1739
+162 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:83; Map init KF:77
+New Map created with 263 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=83 frame=1852 ts=61.7218
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7366
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=84 frame=1857 ts=61.8884
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7402
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=85 frame=1861 ts=62.0217
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=1505
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping LocalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 16
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=1900 t=63.3215 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1400
+mnInitialFrameId = 1851
+152 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:86; Map init KF:83
+New Map created with 197 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=86 frame=1954 ts=65.1212
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7475
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=87 frame=1956 ts=65.1878
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7451
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 21
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=2000 t=66.6542 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1400
+mnInitialFrameId = 1953
+148 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:88; Map init KF:86
+New Map created with 226 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=88 frame=2052 ts=68.3872
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7481
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=89 frame=2055 ts=68.4872
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7500
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 16
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+frame=2100 t=69.9869 imu_batch=0 tracking_state=3 lost_run=0
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+Fail to track local map!
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 1400
+mnInitialFrameId = 2051
+149 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Shutdown
+mpLocalMapper is not finished
+mpLoopCloser is not finished
+Starting to write the save binary file
+End to write save binary file
+
+Saving camera trajectory to /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_table_mono_pnp_traj.csv ...
+
+Saving keyframe trajectory to /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_table_mono_pnp_keyframes_tum.txt ...
+
+TUM keyframe trajectory saved!
+Exported 550 map points to /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_table_mono_pnp_mappoints.xyz
+Exported 550 map points to /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_table_mono_pnp_mappoints.ply

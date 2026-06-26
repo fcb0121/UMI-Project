@@ -1,0 +1,2772 @@
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: Monocular-Inertial
+Loading settings from /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_imx219_mono_inertial_noisy_820x616.yaml
+	-Loaded camera 1
+	-Loaded image info
+	-Loaded IMU calibration
+	-Loaded ORB settings
+	-Loaded viewer settings
+	-Loaded Atlas settings
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Kannala-Brandt): [ 203.583 203.286 415.452 309.098 -0.0119256 -0.00395131 0.000405187 -0.000302394 ]
+	-Original image size: [ 820 , 616 ]
+	-Current image size: [ 820 , 616 ]
+	-Sequence FPS: 30
+	-Gyro noise: 0.035
+	-Accelerometer noise: 0.2
+	-Gyro walk: 0.002
+	-Accelerometer walk: 0.02
+	-IMU frequency: 247
+	-Features per image: 1500
+	-ORB scale factor: 1.2
+	-ORB number of scales: 8
+	-Initial FAST threshold: 15
+	-Min FAST threshold: 5
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+There are 1 cameras in the atlas
+Camera 0 is fisheye
+Discard points further than 20 m from current camera
+Video opened using backend FFMPEG
+There are 2195 frames in total
+video FPS 30
+IMU samples 18292
+Frame timestamps 2195 first_abs=1.78106e+09 first_rel=0 last_rel=73.1197
+IMU first_rel=0.0604475 last_rel=73.2214
+line 1873 keyframes 0MapPoints0
+frame=1700 t=56.656081914901733 imu_batch=14150 tracking_state=1 lost_run=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:0; Map init KF:0
+New Map created with 173 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=0 frame=0 ts=56.656081914901733
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7467
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=9 kfs=2 matches=39
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=9 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 44
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 8
+mnInitialFrameId = 0
+10 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:2; Map init KF:0
+New Map created with 226 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=2 frame=10 ts=56.989353895187378
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7489
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=16 kfs=2 matches=28
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=16 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 43
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 15
+mnInitialFrameId = 9
+17 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:4; Map init KF:2
+New Map created with 207 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=4 frame=17 ts=57.222644090652466
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7472
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=21 kfs=2 matches=29
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=21 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 43
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 20
+mnInitialFrameId = 16
+22 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:6; Map init KF:4
+New Map created with 240 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=6 frame=22 ts=57.389277935028076
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7489
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=28 kfs=2 matches=39
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=28 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 44
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 27
+mnInitialFrameId = 21
+29 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:8; Map init KF:6
+New Map created with 259 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=8 frame=29 ts=57.622566938400269
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7445
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=34 kfs=2 matches=44
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=34 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 40
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 33
+mnInitialFrameId = 28
+35 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:10; Map init KF:8
+New Map created with 244 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=10 frame=35 ts=57.82253098487854
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7377
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=45 kfs=2 matches=33
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=45 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 34
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 44
+mnInitialFrameId = 34
+46 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:12; Map init KF:10
+New Map created with 256 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=12 frame=46 ts=58.189126014709473
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7364
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=51 kfs=2 matches=39
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=51 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 48
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 50
+mnInitialFrameId = 45
+52 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:14; Map init KF:12
+New Map created with 294 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=14 frame=52 ts=58.389090061187744
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7374
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=59 kfs=2 matches=41
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=59 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=15 frame=58 ts=58.58905291557312
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7399
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=60 kfs=2 matches=46
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=60 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 45
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.19996285438537598 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 58
+mnInitialFrameId = 51
+61 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:16; Map init KF:14
+New Map created with 329 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=16 frame=61 ts=58.689038991928101
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7410
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=72 kfs=2 matches=42
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=72 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=73 kfs=2 matches=44
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=17 frame=71 ts=59.022310018539429
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7382
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=73 kfs=2
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=74 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.33327102661132812 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=75 kfs=2 matches=33
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=75 kfs=2
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=76 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 42
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 71
+mnInitialFrameId = 60
+77 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:18; Map init KF:16
+New Map created with 310 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=18 frame=77 ts=59.222268104553223
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7379
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=80 kfs=2 matches=47
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=80 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 46
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 79
+mnInitialFrameId = 76
+81 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:20; Map init KF:18
+New Map created with 328 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=20 frame=81 ts=59.355581045150757
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7343
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=85 kfs=2 matches=59
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=85 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=86 kfs=2 matches=51
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=21 frame=84 ts=59.455559015274048
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7329
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=86 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=87 kfs=2 matches=33
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=87 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 37
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.099977970123291016 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 84
+mnInitialFrameId = 80
+88 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:22; Map init KF:20
+New Map created with 206 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=22 frame=88 ts=59.588871002197266
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7350
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=96 kfs=2 matches=36
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=96 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 34
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 95
+mnInitialFrameId = 87
+97 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+frame=1800 t=59.988792896270752 imu_batch=8 tracking_state=1 lost_run=0
+init_success=1
+First KF:24; Map init KF:22
+New Map created with 199 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=24 frame=97 ts=59.8888099193573
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7329
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=102 kfs=2 matches=33
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=102 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 42
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 101
+mnInitialFrameId = 96
+103 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:26; Map init KF:24
+New Map created with 252 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=26 frame=103 ts=60.088773965835571
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7314
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=111 kfs=2 matches=38
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=111 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 22
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 110
+mnInitialFrameId = 102
+112 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:28; Map init KF:26
+New Map created with 249 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=28 frame=112 ts=60.388720035552979
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7319
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=120 kfs=2 matches=38
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=120 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 40
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 119
+mnInitialFrameId = 111
+121 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:30; Map init KF:28
+New Map created with 381 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=30 frame=121 ts=60.688663005828857
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7368
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=127 kfs=2 matches=44
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=127 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=128 kfs=2 matches=38
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=31 frame=126 ts=60.855295896530151
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7317
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=128 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 33
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.16663289070129395 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 126
+mnInitialFrameId = 120
+129 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:32; Map init KF:30
+New Map created with 184 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=32 frame=129 ts=60.955277919769287
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7293
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=139 kfs=2 matches=31
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=139 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 29
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 138
+mnInitialFrameId = 128
+140 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7350 time_since_init_frame0.33327817916870117
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:34; Map init KF:32
+New Map created with 238 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=34 frame=152 ts=61.721801042556763
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7366
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=158 kfs=2 matches=44
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=158 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=159 kfs=2 matches=43
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=35 frame=157 ts=61.888439893722534
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7402
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=159 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 39
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.16663885116577148 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 157
+mnInitialFrameId = 139
+160 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:36; Map init KF:34
+New Map created with 240 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=36 frame=160 ts=61.988420963287354
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7400
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=167 kfs=2 matches=30
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=167 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 43
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 166
+mnInitialFrameId = 159
+168 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:38; Map init KF:36
+New Map created with 221 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=38 frame=168 ts=62.25503396987915
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7434
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=176 kfs=2 matches=34
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=176 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 39
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 175
+mnInitialFrameId = 167
+177 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:40; Map init KF:38
+New Map created with 218 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=40 frame=177 ts=62.554979085922241
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7410
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=180 kfs=2 matches=32
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=180 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 35
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 179
+mnInitialFrameId = 176
+181 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:42; Map init KF:40
+New Map created with 178 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=42 frame=181 ts=62.688288927078247
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7437
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=186 kfs=2 matches=24
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=186 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 29
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 185
+mnInitialFrameId = 180
+187 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:44; Map init KF:42
+New Map created with 206 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=44 frame=187 ts=62.888252019882202
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7449
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=192 kfs=2 matches=24
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=192 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 30
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 191
+mnInitialFrameId = 186
+193 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:46; Map init KF:44
+New Map created with 207 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=46 frame=193 ts=63.088212966918945
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7383
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=200 kfs=2 matches=27
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=200 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 30
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+frame=1900 t=63.32150411605835 imu_batch=8 tracking_state=3 lost_run=0
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 199
+mnInitialFrameId = 192
+201 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:48; Map init KF:46
+New Map created with 296 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=48 frame=201 ts=63.354832887649536
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7415
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=206 kfs=2 matches=39
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=206 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 37
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 205
+mnInitialFrameId = 200
+207 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:50; Map init KF:48
+New Map created with 219 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=50 frame=207 ts=63.554791927337646
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7432
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=212 kfs=2 matches=39
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=212 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 47
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 211
+mnInitialFrameId = 206
+213 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:52; Map init KF:50
+New Map created with 175 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=52 frame=213 ts=63.754756927490234
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7445
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=218 kfs=2 matches=23
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=218 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 17
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 217
+mnInitialFrameId = 212
+219 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:54; Map init KF:52
+New Map created with 470 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=54 frame=219 ts=63.954720973968506
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7477
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=224 kfs=2 matches=84
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=224 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=225 kfs=2 matches=51
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=225 kfs=2
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=55 frame=223 ts=64.088027954101562
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7489
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=226 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.13330698013305664 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=227 kfs=2 matches=26
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=227 kfs=2
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=228 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 39
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 223
+mnInitialFrameId = 218
+229 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:56; Map init KF:54
+New Map created with 389 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=56 frame=229 ts=64.287993907928467
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7501
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=237 kfs=2 matches=66
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=237 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 13
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 236
+mnInitialFrameId = 228
+238 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:58; Map init KF:56
+New Map created with 317 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=58 frame=238 ts=64.587934970855713
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7500
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=244 kfs=2 matches=50
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=244 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 39
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 243
+mnInitialFrameId = 237
+245 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:60; Map init KF:58
+New Map created with 264 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=60 frame=245 ts=64.821223974227905
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7480
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=250 kfs=2 matches=37
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=250 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 31
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 249
+mnInitialFrameId = 244
+251 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:62; Map init KF:60
+New Map created with 460 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=62 frame=251 ts=65.02118706703186
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7480
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=257 kfs=2 matches=74
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=257 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=258 kfs=2 matches=49
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=258 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 42
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=63 frame=256 ts=65.187822103500366
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7451
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.16663503646850586 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 256
+mnInitialFrameId = 250
+259 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:64; Map init KF:62
+New Map created with 193 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=64 frame=259 ts=65.287802934646606
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7445
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=264 kfs=2 matches=27
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=264 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 32
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 263
+mnInitialFrameId = 258
+265 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:66; Map init KF:64
+New Map created with 328 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=66 frame=265 ts=65.487767934799194
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7477
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=270 kfs=2 matches=54
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=270 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 39
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 269
+mnInitialFrameId = 264
+271 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:68; Map init KF:66
+New Map created with 262 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=68 frame=271 ts=65.687733888626099
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7485
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=277 kfs=2 matches=44
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=277 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 35
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 276
+mnInitialFrameId = 270
+278 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:70; Map init KF:68
+New Map created with 312 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=70 frame=278 ts=65.921020030975342
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7465
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=281 kfs=2 matches=49
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=281 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=282 kfs=2
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=71 frame=280 ts=65.987673997879028
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7464
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=283 kfs=2 matches=34
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=283 kfs=2
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.066653966903686523 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=284 kfs=2 matches=31
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=284 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=285 kfs=2 matches=24
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=285 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 37
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 280
+mnInitialFrameId = 277
+286 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:72; Map init KF:70
+New Map created with 423 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=72 frame=286 ts=66.187635898590088
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7477
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=290 kfs=2 matches=59
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=290 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 31
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 289
+mnInitialFrameId = 285
+291 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:74; Map init KF:72
+New Map created with 357 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=74 frame=291 ts=66.354274034500122
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7475
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=296 kfs=2 matches=50
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=296 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 42
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 295
+mnInitialFrameId = 290
+297 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:76; Map init KF:74
+New Map created with 158 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+frame=2000 t=66.654212951660156 imu_batch=9 tracking_state=2 lost_run=0
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=76 frame=297 ts=66.554234027862549
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7481
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=301 kfs=2 matches=20
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=301 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 25
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 300
+mnInitialFrameId = 296
+302 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:78; Map init KF:76
+New Map created with 386 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=78 frame=302 ts=66.720870971679688
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7474
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=309 kfs=2 matches=52
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=309 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=310 kfs=2 matches=51
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=310 kfs=2
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=79 frame=308 ts=66.920831918716431
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7483
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 13
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.19996094703674316 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 308
+mnInitialFrameId = 301
+311 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:80; Map init KF:78
+New Map created with 282 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=80 frame=311 ts=67.020817041397095
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7474
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=315 kfs=2 matches=45
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=315 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 32
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 314
+mnInitialFrameId = 310
+316 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:82; Map init KF:80
+New Map created with 192 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=82 frame=316 ts=67.187448024749756
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7473
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=321 kfs=2 matches=40
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=321 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 26
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 320
+mnInitialFrameId = 315
+322 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:84; Map init KF:82
+New Map created with 259 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=84 frame=322 ts=67.387411117553711
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7487
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=326 kfs=2 matches=40
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=326 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 40
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 325
+mnInitialFrameId = 321
+327 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:86; Map init KF:84
+New Map created with 189 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=86 frame=327 ts=67.55404806137085
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7482
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=332 kfs=2 matches=33
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=332 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 25
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 331
+mnInitialFrameId = 326
+333 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:88; Map init KF:86
+New Map created with 172 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=88 frame=333 ts=67.75400710105896
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7492
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=340 kfs=2 matches=21
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=340 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 21
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 339
+mnInitialFrameId = 332
+341 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:90; Map init KF:88
+New Map created with 246 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=90 frame=341 ts=68.020631074905396
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7482
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=347 kfs=2 matches=49
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=347 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 41
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 346
+mnInitialFrameId = 340
+348 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:92; Map init KF:90
+New Map created with 227 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=92 frame=348 ts=68.253915071487427
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7490
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=359 kfs=2 matches=42
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=359 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 46
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 358
+mnInitialFrameId = 347
+360 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:94; Map init KF:92
+New Map created with 214 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=94 frame=360 ts=68.653842926025391
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7495
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=369 kfs=2 matches=35
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=369 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 45
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 368
+mnInitialFrameId = 359
+370 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7497 time_since_init_frame0.33326506614685059
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7474 time_since_init_frame0.33327102661132812
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+frame=2100 t=69.986932992935181 imu_batch=8 tracking_state=1 lost_run=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7471 time_since_init_frame0.33326911926269531
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:96; Map init KF:94
+New Map created with 174 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=96 frame=406 ts=70.186886072158813
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7470
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=414 kfs=2 matches=28
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=414 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 37
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 413
+mnInitialFrameId = 369
+415 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7404 time_since_init_frame0.33327317237854004
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:98; Map init KF:96
+New Map created with 282 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=98 frame=427 ts=70.886756896972656
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7432
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=437 kfs=2 matches=46
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=437 kfs=2
+[RASPI_DEBUG] TrackWithMotionModel: skipping early PoseOptimization frame=438 kfs=2 matches=41
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=438 kfs=2
+TrackLocalMap() mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50 = 27
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=99 frame=436 ts=71.186702013015747
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7422
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors begin
+[RASPI_DEBUG] LocalMapping: SearchInNeighbors end
+[RASPI_DEBUG] LocalMapping: optimization block begin
+[RASPI_DEBUG] LocalMapping: IMU initialization disabled by default window=0.29994511604309082 kfs=2 set RASPI_ORBSLAM3_ENABLE_IMU_INIT=1 to experiment
+[RASPI_DEBUG] LocalMapping: skipping KeyFrameCulling
+[RASPI_DEBUG] LocalMapping: optimization block end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 436
+mnInitialFrameId = 414
+439 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=1
+First KF:100; Map init KF:98
+New Map created with 159 points
+[RASPI_DEBUG] Tracking: skipping initial GlobalBundleAdjustment
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: popped KF id=100 frame=439 ts=71.286680936813354
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW begin
+[RASPI_DEBUG] ProcessNewKeyFrame: ComputeBoW end
+[RASPI_DEBUG] ProcessNewKeyFrame: map point matches=7396
+[RASPI_DEBUG] ProcessNewKeyFrame: observations end
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections begin
+[RASPI_DEBUG] ProcessNewKeyFrame: UpdateConnections end
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame begin
+[RASPI_DEBUG] ProcessNewKeyFrame: AddKeyFrame end
+[RASPI_DEBUG] LocalMapping: ProcessNewKeyFrame end
+[RASPI_DEBUG] LocalMapping: MapPointCulling begin
+[RASPI_DEBUG] LocalMapping: MapPointCulling end
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints begin
+[RASPI_DEBUG] TrackReferenceKeyFrame: skipping early PoseOptimization frame=448 kfs=2 matches=31
+[RASPI_DEBUG] TrackLocalMap: skipping early PoseOptimization frame=448 kfs=2
+TrackLocalMap() mnMatchesInliers<50 && !mpAtlas->isImuInitialized() = 47
+Fail to track local map!
+IMU is not or recently initialized. Reseting active map...
+SYSTEM-> Reseting active map in monocular case
+LM: Active map reset recieved
+LM: Active map reset, waiting...
+[RASPI_DEBUG] LocalMapping: CreateNewMapPoints end
+[RASPI_DEBUG] LocalMapping: skipping LoopClosing InsertKeyFrame
+LM: Reseting current map in Local Mapping...
+LM: End reseting Local Mapping...
+LM: Reset free the mutex
+LM: Active map reset, Done!!!
+mnFirstFrameId = 447
+mnInitialFrameId = 438
+449 Frames set to lost
+line 1873 keyframes 0MapPoints0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7402 time_since_init_frame0.33327293395996094
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7449 time_since_init_frame0.33327198028564453
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Failed to init: n_keypoints 7450 time_since_init_frame0.33327102661132812
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+init_success=0
+ tag_init_success=0
+Shutdown
+mpLocalMapper is not finished
+mpLoopCloser is not finished
+Starting to write the save binary file
+End to write save binary file
+
+Saving camera trajectory to /home/zzzjt/projects/session_20260610_112528/orbslam3_output/raspi_table_pnp_start1700_traj.csv ...
+There are 0 maps in the atlas

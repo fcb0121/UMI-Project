@@ -1,0 +1,16 @@
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+IMU.InsertKFsWhenLost optional parameter does not exist...
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+
+[RASPI_CRASH] Caught signal 11
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(_Z21PrintBacktraceAndExiti+0x3d)[0x6085e381381d]
+/lib/x86_64-linux-gnu/libc.so.6(+0x42520)[0x7f5bc8f8a520]
+/lib/x86_64-linux-gnu/libstdc++.so.6(_ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base+0x4)[0x7f5bc9257534]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM33Map15GetAllKeyFramesEv+0x85)[0x7f5bca009475]
+/home/zzzjt/projects/orbslam3_ws/ORB_SLAM3/lib/libORB_SLAM3.so(_ZN9ORB_SLAM36System17SaveTrajectoryCSVERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x586)[0x7f5bc9f4fc26]
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(main+0x1c84)[0x6085e3813364]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f5bc8f71d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f5bc8f71e40]
+./Examples/Monocular-Inertial/raspi_mono_inertial_slam(_start+0x25)[0x6085e3813715]
