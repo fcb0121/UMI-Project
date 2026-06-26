@@ -1,0 +1,49 @@
+note: Center-filtered trial OpenCV AprilTag calibration only; mirrors were excluded
+  by image ROI. Use Kalibr for final.
+session: session_20260604_171453
+model: opencv_pinhole_rational
+image_width: 1640
+image_height: 1232
+roi_filter:
+  xmin: 500
+  xmax: 1150
+  ymin: 80
+  ymax: 1120
+candidate_views: 86
+selected_views: 40
+rms_px: 5.675104118426528
+K:
+- - 371.87841757637807
+  - 0.0
+  - 824.8788599812351
+- - 0.0
+  - 371.4012028085941
+  - 621.7296679685809
+- - 0.0
+  - 0.0
+  - 1.0
+D:
+- 6.919737343759132
+- 8.335425289144585
+- 0.0002199428309708839
+- 0.00210866699768971
+- 0.08583936801282166
+- 7.310616619849521
+- 11.102418630557473
+- 1.7516780848469633
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+per_view_error_px:
+  mean: 5.57957661151886
+  median: 4.954368352890015
+  max: 8.934414863586426
+target:
+  target_type: aprilgrid
+  tagCols: 6
+  tagRows: 6
+  tagSize: 0.0345
+  tagSpacing: 0.3

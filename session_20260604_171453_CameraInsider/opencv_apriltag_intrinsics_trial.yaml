@@ -1,0 +1,47 @@
+note: Trial OpenCV AprilTag calibration only; use Kalibr for final pinhole-equi/fisheye
+  calibration.
+session: session_20260604_171453
+model: opencv_pinhole_rational
+image_width: 1640
+image_height: 1232
+sample_stride_frames: 10
+min_tags_per_candidate_view: 8
+selected_min_spacing_frames: 30
+candidate_views: 86
+selected_views: 40
+rms_px: 5.674257852966692
+K:
+- - 366.3587465469491
+  - 0.0
+  - 827.3662390056099
+- - 0.0
+  - 365.8886503229117
+  - 620.3678446615966
+- - 0.0
+  - 0.0
+  - 1.0
+D:
+- 3.583468193941494
+- 5.322235077121675
+- 0.0006108843547872792
+- 0.0009275920536449437
+- 0.22975066031136276
+- 3.9511196037704677
+- 6.692424471002447
+- 1.3957648351879914
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+per_view_error_px:
+  mean: 5.581239914894104
+  median: 4.952517747879028
+  max: 8.942455291748047
+target:
+  target_type: aprilgrid
+  tagCols: 6
+  tagRows: 6
+  tagSize: 0.0345
+  tagSpacing: 0.3
