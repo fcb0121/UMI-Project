@@ -1,0 +1,54 @@
+%YAML:1.0
+
+File.version: "1.0"
+Camera.type: "KannalaBrandt8"
+
+Camera1.fx: 203.58278144511738
+Camera1.fy: 203.2859860639028
+Camera1.cx: 415.45246353671215
+Camera1.cy: 309.0978834885213
+
+Camera1.k1: -0.011925575149450052
+Camera1.k2: -0.003951306310202171
+Camera1.k3: 0.0004051865456881907
+Camera1.k4: -0.00030239381530415495
+
+Camera.width: 820
+Camera.height: 616
+Camera.fps: 30
+Camera.RGB: 1
+
+IMU.T_b_c1: !!opencv-matrix
+    rows: 4
+    cols: 4
+    dt: f
+    data: [0.99995919, -0.00569336, 0.00701395, -0.03075538,
+           -0.00712909, -0.02046306, 0.99976519, -0.02840403,
+           -0.00554850, -0.99977440, -0.02050282, 0.10322620,
+           0.0, 0.0, 0.0, 1.0]
+
+IMU.NoiseGyro: 0.035
+IMU.NoiseAcc: 0.20
+IMU.GyroWalk: 0.002
+IMU.AccWalk: 0.02
+IMU.Frequency: 247.0
+
+ORBextractor.nFeatures: 1500
+ORBextractor.scaleFactor: 1.2
+ORBextractor.nLevels: 8
+ORBextractor.iniThFAST: 15
+ORBextractor.minThFAST: 5
+
+System.thFarPoints: 20.0
+
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1.0
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize: 2.0
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3.0
+Viewer.ViewpointX: 0.0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -3.5
+Viewer.ViewpointF: 500.0
+Viewer.imageViewScale: 1.0
