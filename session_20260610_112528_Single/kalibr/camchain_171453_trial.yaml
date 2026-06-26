@@ -1,0 +1,11 @@
+# Approximate camera intrinsics from session_20260604_171453.
+# This is an OpenCV trial result converted to a Kalibr-style camchain.
+# Use it only to run the first cam-imu pipeline trial; a Kalibr-generated
+# camera calibration is preferred for final extrinsics.
+cam0:
+  camera_model: pinhole
+  intrinsics: [371.87841757637807, 371.4012028085941, 824.8788599812351, 621.7296679685809]
+  distortion_model: radtan
+  distortion_coeffs: [0.0, 0.0, 0.0, 0.0]
+  resolution: [1640, 1232]
+  rostopic: /cam0/image_raw
