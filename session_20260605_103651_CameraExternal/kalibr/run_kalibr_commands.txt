@@ -1,0 +1,55 @@
+Recommended: run Kalibr through the Docker wrapper from the session root.
+This builds an Ubuntu 20.04 / ROS Noetic Kalibr image and mounts this session
+at /data inside the container.
+
+1. Build the Docker image once:
+
+./kalibr/run_kalibr_docker.sh build
+
+2. Convert the session to a ROS bag:
+
+./kalibr/run_kalibr_docker.sh bag
+
+3. Check bag topics and timestamp overlap:
+
+./kalibr/run_kalibr_docker.sh check
+
+4. Trial camera-IMU calibration:
+
+./kalibr/run_kalibr_docker.sh calibrate
+
+Optional extraction viewer:
+
+./kalibr/run_kalibr_docker.sh calibrate --show-extraction
+
+Or run bag generation, bag check, and calibration in one go:
+
+./kalibr/run_kalibr_docker.sh all --show-extraction
+
+The generated bag defaults to:
+
+kalibr/session_20260605_103651.bag
+
+
+Manual equivalent commands inside a ROS/Kalibr environment:
+
+1. Convert the session to a ROS bag:
+
+python3 make_kalibr_bag.py \
+  --session /media/robotiq/ext_disk/session_20260605_103651 \
+  --output /media/robotiq/ext_disk/session_20260605_103651/kalibr/session_20260605_103651.bag
+
+2. Trial camera-IMU calibration:
+
+kalibr_calibrate_imu_camera \
+  --target /media/robotiq/ext_disk/session_20260605_103651/kalibr/aprilgrid_6x6_34p5mm.yaml \
+  --cam /media/robotiq/ext_disk/session_20260605_103651/kalibr/camchain_171453_trial.yaml \
+  --imu /media/robotiq/ext_disk/session_20260605_103651/kalibr/imu_atk_imu601_approx.yaml \
+  --bag /media/robotiq/ext_disk/session_20260605_103651/kalibr/session_20260605_103651.bag \
+  --show-extraction
+
+Notes:
+- The Raspberry Pi currently does not have rosbag/rospy/sensor_msgs/cv_bridge/Kalibr installed.
+- The gyro values in imu_data.csv are deg/s; make_kalibr_bag.py converts them to rad/s.
+- camchain_171453_trial.yaml uses approximate intrinsics. For final extrinsics,
+  prefer a Kalibr-generated camera calibration.
